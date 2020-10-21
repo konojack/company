@@ -1,0 +1,94 @@
+.offer__container {
+  margin-top: 6rem;
+
+  @include media('>=phone') {
+    margin-top: 8rem;
+  }
+
+  @include media('>=tablet') {
+    margin-top: 6rem;
+  }
+
+  .offer__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .offer__box {
+      text-align: center;
+      p {
+        line-height: 1.4rem;
+        color: $blueColor;
+      }
+    }
+
+    .offer__elements {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      margin-top: 2rem;
+
+      .offer__element {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        max-width: 37rem;
+
+        &:nth-child(3) {
+          margin-top: 4.4rem;
+        }
+
+        @include media('>=tablet') {
+          flex-direction: row;
+          min-width: 40rem;
+          max-width: 40rem;
+        }
+
+        @include media('>=laptop') {
+          min-width: 45rem;
+          max-width: 45rem;
+        }
+
+        .element__left {
+          text-align: center;
+
+          @include media('>=tablet') {
+            margin-right: 2rem;
+            min-width: 7rem;
+          }
+
+          .element__icon {
+            width: 3rem;
+            height: auto;
+
+            @include media('>=tablet') {
+              width: 4rem;
+            }
+          }
+
+          h3 {
+            margin: 0.5rem;
+          }
+        }
+
+        .element__right {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            line-height: 1.4rem;
+            margin-top: 0.5rem;
+          }
+          .buttonGo {
+            align-self: start;
+
+            @include media('>=tablet') {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

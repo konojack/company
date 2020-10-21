@@ -1,0 +1,74 @@
+.generalInfo__container {
+  margin-top: 3rem;
+
+  @include media('>=phone') {
+    margin-top: 0rem;
+  }
+
+  @include media('>=tablet') {
+    margin-top: 7rem;
+  }
+
+  .generalInfo__wrapper {
+    display: flex;
+    justify-content: center;
+ 
+
+    .generalInfo__box {
+      padding: 1rem;
+      max-width: 30rem;
+      text-align: center;
+
+      p {
+        line-height: 1.4rem;
+        color: $blueColor;
+      }
+    }
+  }
+
+  .video__container {
+    margin: 4rem 1rem;
+    padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+    position: relative;
+
+    @include media('>=tablet') {
+      margin: 8rem 1rem 0rem 1rem;
+    }
+
+    .button__container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      background-color: rgba(0, 0, 0, 0.93);
+
+      @include media('>=tablet') {
+        width: 80%;
+        height: 80%;
+      }
+
+      @include media('>=laptop') {
+        width: 60%;
+        height: 60%;
+      }
+
+      .buttonPLAY {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+      }
+    }
+
+    .video {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

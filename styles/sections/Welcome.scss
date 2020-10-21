@@ -1,0 +1,234 @@
+.welcome__container {
+  height: 39rem;
+  
+  .welcome__wrapper {
+    display: flex;
+    padding: 5rem 0.5rem;
+
+    @include media('>=tablet') {
+      padding: 3rem 0rem;
+    }
+
+    .welcome__box {
+      @include media('>=tablet') {
+        padding-top: 5rem;
+      }
+    }
+
+    .welcome__box-left {
+      text-align: center;
+      position: relative;
+      height: 24rem;
+      width: 100%;
+
+      @include media('>=tablet') {
+        width: 50%;
+      }
+
+      .welcome__box-left-content {
+        @include media('>=tablet') {
+          position: absolute;
+          top: 2rem;
+          left: 4rem;
+          width: 32rem;
+        }
+
+        .dobrazmiana {
+          display: inline-block;
+          background: #fbfbff;
+          border: 1px solid #e9e9e9;
+          padding: 0.1rem 0.25rem;
+          border-radius: 0.1rem;
+          color: $blueColorDark;
+
+          @include media('>=tablet') {
+            transform: translate(-6rem, 20px);
+          }
+        }
+
+        .title {
+          font-size: 2.5rem;
+          font-weight: 800;
+          color: $blueColorDark;
+          min-height: 12rem;
+          margin: 2rem 0 2rem 0;
+
+          @include media('>=tablet') {
+            font-size: 70px;
+          }
+        }
+
+        .option {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 1rem 0 0 1rem;
+          color: $blueColor;
+
+          .left__option,
+          .right__option {
+            text-align: left;
+
+            p {
+              line-height: 1.4rem;
+            }
+
+            .checked {
+              width: 1rem;
+              margin-right: 0.5rem;
+              fill: $blueColor;
+            }
+          }
+
+          .left__option {
+            margin-right: 2rem;
+          }
+
+          @include media('>=phone') {
+            flex-direction: row;
+            padding: 0rem;
+          }
+        }
+
+        .e-book {
+          display: inline-block;
+          transform: translate(0rem, 2rem);
+
+          @include media('>=phone') {
+            transform: translate(-6.1rem, 2rem);
+          }
+        }
+      }
+    }
+
+    .welcome__box-right {
+      display: none;
+      position: relative;
+
+      @include media('>=tablet') {
+        display: flex;
+        width: 50%;
+      }
+
+      .teacher {
+        height: 100%;
+        transform: translateX(-5rem);
+        position: absolute;
+        z-index: 0;
+        max-height: 38rem;
+        top: 8rem;
+        left: -3rem;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.tlooo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -3;
+}
+
+.addon {
+  position: fixed;
+  z-index: -1;
+
+  &-1 {
+    height: 2rem;
+    fill: $blueColor;
+    top: 21%;
+    right: 22%;
+    z-index: -1;
+    animation: animationFramesTwo 13s infinite linear;
+  }
+
+  &-2 {
+    height: 1rem;
+    fill: #ff292f;
+    top: 27%;
+    left: 7%;
+    z-index: -1;
+    animation: animationFramesFour 13s infinite linear;
+  }
+
+  &-3 {
+    height: 3rem;
+    fill: #fde625;
+    right: -3%;
+    top: 26%;
+    z-index: -1;
+    animation: jump 13s infinite linear;
+  }
+
+  &-4 {
+    height: 3rem;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    animation: animationFramesThree 35s infinite linear;
+  }
+
+  &-5 {
+    height: 3rem;
+    top: 22%;
+    left: 41%;
+    z-index: -1;
+    animation: animationFramesTwo 15s infinite linear;
+  }
+}
+
+@keyframes animationFramesTwo {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+  20% {
+    transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+  }
+  40% {
+    transform: translate(141px, 72px) rotate(72deg) scale(1);
+  }
+  60% {
+    transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+  }
+  80% {
+    transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes animationFramesThree {
+  0% {
+    transform: translate(165px, -179px);
+  }
+  100% {
+    transform: translate(-346px, 617px);
+  }
+}
+
+@keyframes animationFramesFour {
+  0% {
+    transform: translate(-300px, 151px) rotate(0deg);
+  }
+  100% {
+    transform: translate(251px, -200px) rotate(180deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

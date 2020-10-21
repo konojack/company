@@ -1,0 +1,41 @@
+$blueColor: #6159e6;
+$blueColorDark: #243e64;
+$whiteColor: #fff;
+$redColor: #fd2539;
+
+.main__one {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: $redColor;
+}
+
+.main__two {
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: $blueColorDark;
+}
+
+.blueDarkColorClass {
+    color: #243e64;
+    font-weight: 700;
+}
+
+.buttonBlue {
+    color: $blueColor;
+    padding: 1rem;
+    cursor: pointer;
+    background: $blueColor;
+    border-radius: 50rem;
+    color: $whiteColor;
+    border: .15rem solid transparent;
+    transition: .2s;
+    display: inline-block;
+
+    &:hover {
+        background: $whiteColor;
+        color: $blueColor;
+        border: .15rem solid $blueColor;
+    }
+}

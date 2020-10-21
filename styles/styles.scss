@@ -1,0 +1,96 @@
+@import './normalize.scss';
+
+@import 'utils/mixin.scss';
+@import 'utils/scroll.scss';
+@import 'utils/breakpoints.scss';
+@import 'utils/reusable.scss';
+@import 'utils/404.scss';
+@import 'utils/error.scss';
+
+@import 'components/Footer.scss';
+@import 'components/Navbar.scss';
+@import 'components/Intro.scss';
+@import 'components/Loader.scss';
+@import 'components/Grid.scss';
+
+@import 'sections/Welcome.scss';
+@import 'sections/GeneralInfo.scss';
+@import 'sections/Offer.scss';
+
+
+@font-face {
+  //   font-family: maelstrom;
+  //   src: url('../public/font/maelstrom-bold.woff') format('truetype');
+}
+
+// Font-size
+$min_width: 300px;
+$max_width: 1600px;
+$min_font: 16px;
+$max_font: 26px;
+
+html {
+  // @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#__next {
+  height: 100%;
+}
+
+.layout__container {
+  // background-color: rgb(179, 179, 208);
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  //   @include media("<=tablet") {
+  //      height: 80%;
+  //   }
+
+  // @include media("<=654px") {
+  //     width: 100%;
+  //   }
+
+  &::before, &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(241 240 255);
+    z-index: -1;
+  }
+
+  &::before {
+    left: 29%;
+  }
+  &::after {
+    left: 70%;
+  }
+}
+
+.layout__wrapper {
+  // background-color: rgb(132, 132, 226);
+  height: 100%;
+  width: 100%;
+  min-height: calc(100vh - 10rem);
+  margin: 0 auto;
+}
