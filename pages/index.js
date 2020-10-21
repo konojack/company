@@ -8,6 +8,9 @@ import gsap from 'gsap';
 import Welcome from '../sections/Welcome'
 import GeneralInfo from '../sections/GeneralInfo'
 import Offer from '../sections/Offer'
+import Price from '../sections/Price'
+import Team from '../sections/Team'
+import Contact from '../sections/Contact'
 
 const timeline = gsap.timeline();
 // const Home = ({ t }) => {
@@ -19,6 +22,9 @@ const Home = () => {
       <Welcome />
       <GeneralInfo />
       <Offer />
+      <Price />
+      <Team />
+      <Contact />
     </>
   );
 };

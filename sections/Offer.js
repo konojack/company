@@ -22,8 +22,9 @@ function Offer() {
             </div>
             <div className='element__right'>
               <p>
-                11 wyselekcjonowanych sekcji <br />+ 4 opcjonalne <br />+
-                niezliczona ilosc sekcji na Panstwa zyczenie
+              <span>11 wyselekcjonowanych sekcji</span> <br />
+                + 4 opcjonalne <br />+ niezliczona ilosc sekcji na Panstwa
+                zyczenie
               </p>
               <p className='buttonGo buttonBlue'>Zobacz &rarr;</p>
             </div>
@@ -36,24 +37,37 @@ function Offer() {
             </div>
             <div className='element__right'>
               <p>
-                60 krokow podjetych w celu stworzenia profesjonalnej strony
-                internetowej. <br /> W tym: <br />- Strona pisana 100% od zera
-                bez uzycia szablonow czy nieslawnych, wolnych i powtarzalnych
-                CMS (np. WordPress) <br /># SSR: strona tworzy sie po stronie
-                serwera a nie w przegladrce. Oznacza to ze robotom Google
-                latwiej bedzie ja znalezc. Dzieki temu pozycja strony bedzie o
-                wiele lepsza. <br /># PWA: progresywna aplikacja, dzieki ktorej
-                strona bedzie 2x szybciej dzieki zapisowi danych po pierwszych
-                wizytach a takze bedzie dzialac nawet gdy nie bedzie polaczenia
-                z internetem <br /># Responsywnosc: strona w 100% bedzie
-                idealnie dopasowana pod kazde urzadzenie i przegladarke
-                internetowa co do pixela - Instalacja i optymalizacja Swietej
-                trojki: Google My Business Page <br /># bardzo wazna czesc
-                informacyjna o firmie, widoczna po prawej stronie ekranu, po
-                wyszukaniu w Google. 80% firm wykorzystuje ta czesc tylko w 20%.
-                My uzyjemy jej w 100%. Google Search console i Google Analytics{' '}
-                <br /># profesjonalne narzedzia do kontroli statystyk,
-                pomagajace dotrzec do wiekszej ilosci klientow
+                <span>60 krokow podjetych w celu stworzenia profesjonalnej strony internetowej.</span>
+              </p>
+              <p>W tym:</p>
+              <p>
+                <span># Strona pisana 100% od zera </span> bez uzycia szablonow
+                czy nieslawnych, wolnych i powtarzalnych CMS (np. WordPress)
+              </p>
+              <p>
+                <span># SSR:</span> strona tworzy sie po stronie serwera a nie w
+                przegladrce. Oznacza to ze robotom Google latwiej bedzie ja
+                znalezc. Dzieki temu pozycja strony bedzie o wiele lepsza.{' '}
+              </p>
+              <p>
+                <span># PWA:</span> progresywna aplikacja, dzieki ktorej strona
+                bedzie 2x szybciej dzieki zapisowi danych po pierwszych wizytach
+                a takze bedzie dzialac nawet gdy nie bedzie polaczenia z
+                internetem{' '}
+              </p>
+              <p>
+                <span># Responsywnosc:</span> strona w 100% idealnie dopasowana
+                pod kazde urzadzenie i przegladarke internetowa co do pixela{' '}
+              </p>
+              <p>
+                <span># Instalacja i optymalizacja Swietej trojki:</span> Google
+                My Business Page - bardzo wazna czesc informacyjna o firmie,
+                widoczna po prawej stronie ekranu, po wyszukaniu w Google. 80%
+                firm wykorzystuje ta czesc tylko w 20%. My uzyjemy jej w 100%.
+                <br />
+                Google Search console i Google Analytics - profesjonalne
+                narzedzia do kontroli statystyk, pomagajace dotrzec do wiekszej
+                ilosci klientow
               </p>
               <p className='buttonGo buttonBlue'>Zobacz &rarr;</p>
             </div>
@@ -66,7 +80,8 @@ function Offer() {
             </div>
             <div className='element__right'>
               <p>
-                Ponad 100 darmowych rad. <br />
+                <span>Ponad 100 darmowych rad.</span>
+                <br />
                 Zbior najlepszych zasad dotyczacych tworzenia contentu
                 marketingowego, social media i sposobow na zdobycie wiekszej
                 ilosci klientow. Ponad 100 rad.

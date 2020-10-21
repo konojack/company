@@ -9,6 +9,10 @@
     margin-top: 6rem;
   }
 
+  @include media('>=laptop') {
+    margin-top: 0rem;
+  }
+
   .offer__wrapper {
     display: flex;
     justify-content: center;
@@ -79,9 +83,20 @@
           p {
             line-height: 1.4rem;
             margin-top: 0.5rem;
+            color: $blueColor;
+
+            span {
+              font-weight: 700;
+              color: $blueColorDark;
+            }
           }
           .buttonGo {
             align-self: start;
+            color: #fff;
+
+            &:hover {
+              color: $blueColor;
+            }
 
             @include media('>=tablet') {
               margin-top: 1rem;

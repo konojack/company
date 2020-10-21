@@ -1,0 +1,64 @@
+.contact__container {
+  margin-top: 6rem;
+
+  @include media('>=phone') {
+    margin-top: 8rem;
+  }
+
+  @include media('>=tablet') {
+    margin-top: 6rem;
+  }
+
+  @include media('>=laptop') {
+    margin-top: 10rem;
+  }
+
+  .contact__wrapper {
+    .contact__box {
+      display: flex;
+      flex-direction: column;
+      width: 18rem;
+      padding: 1rem;
+
+      @include media('>=tablet') {
+        flex-direction: row;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          border: none;
+          border-bottom: 1px solid #333;
+          margin-top: 1rem;
+        }
+
+        button {
+          color: #fff;
+          padding: 1rem;
+          cursor: pointer;
+          background: #3d8e1c;
+          border-radius: 50rem;
+          border: 0.15rem solid transparent;
+          transition: 0.2s;
+          display: inline-block;
+          display: inline-block;
+          align-self: center;
+          width: 9rem;
+          margin-top: 1rem;
+
+          &:hover {
+            background: #fff;
+            color: #3d8e1c;
+            border: 0.15rem solid #3d8e1c;
+          }
+        }
+      }
+
+      .contact__text {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
