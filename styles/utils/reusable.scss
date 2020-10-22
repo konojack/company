@@ -4,92 +4,99 @@ $whiteColor: #fff;
 $redColor: #fd2539;
 
 .main__one {
-    font-size: 17px;
-    text-transform: uppercase;
-    color: $redColor;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $redColor;
 }
 
 .main__two {
-    font-size: 30px;
-    text-transform: uppercase;
-    line-height: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: $blueColorDark;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: $blueColorDark;
 }
 
 .blueDarkColorClass {
-    color: #243e64;
-    font-weight: 700;
+  color: #243e64;
+  font-weight: 700;
 }
 
 .buttonBlue {
-    color: $blueColor;
-    padding: 1rem;
-    cursor: pointer;
-    background: $blueColor;
-    border-radius: 50rem;
-    color: $whiteColor;
-    border: .15rem solid transparent;
-    transition: .2s;
-    display: inline-block;
+  color: $blueColor;
+  padding: 1rem;
+  cursor: pointer;
+  background: $blueColor;
+  border-radius: 50rem;
+  color: $whiteColor;
+  border: 0.15rem solid transparent;
+  transition: 0.2s;
+  display: inline-block;
 
-    &:hover {
-        background: $whiteColor;
-        color: $blueColor;
-        border: .15rem solid $blueColor;
-    }
+  a {
+    color: #fff;
+  }
+
+  &:hover {
+    background: $whiteColor;
+    border: 0.15rem solid $blueColor;
+  }
+
+  &:hover a {
+    color: $blueColor;
+  }
 }
 
 @keyframes animationFramesTwo {
-    0% {
-      transform: translate(0px, 0px) rotate(0deg) scale(1);
-    }
-    20% {
-      transform: translate(73px, -1px) rotate(36deg) scale(0.9);
-    }
-    40% {
-      transform: translate(141px, 72px) rotate(72deg) scale(1);
-    }
-    60% {
-      transform: translate(83px, 122px) rotate(108deg) scale(1.2);
-    }
-    80% {
-      transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
-    }
-    100% {
-      transform: translate(0px, 0px) rotate(0deg) scale(1);
-    }
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
   }
-  
-  @keyframes animationFramesThree {
-    0% {
-      transform: translate(165px, -179px);
-    }
-    100% {
-      transform: translate(-346px, 617px);
-    }
+  20% {
+    transform: translate(73px, -1px) rotate(36deg) scale(0.9);
   }
-  
-  @keyframes animationFramesFour {
-    0% {
-      transform: translate(-300px, 151px) rotate(0deg);
-    }
-    100% {
-      transform: translate(251px, -200px) rotate(180deg);
-    }
+  40% {
+    transform: translate(141px, 72px) rotate(72deg) scale(1);
   }
-  
-  @keyframes jump {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-    40% {
-      -webkit-transform: translate3d(0, 50%, 0);
-      transform: translate3d(0, 50%, 0);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+  60% {
+    transform: translate(83px, 122px) rotate(108deg) scale(1.2);
   }
+  80% {
+    transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes animationFramesThree {
+  0% {
+    transform: translate(165px, -179px);
+  }
+  100% {
+    transform: translate(-346px, 617px);
+  }
+}
+
+@keyframes animationFramesFour {
+  0% {
+    transform: translate(-300px, 151px) rotate(0deg);
+  }
+  100% {
+    transform: translate(251px, -200px) rotate(180deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

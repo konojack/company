@@ -30,7 +30,7 @@ function AllStructure() {
         <div className='allStructure__elements'>
           {/* 1 */}
           {data.map((el) => (
-            <div className='allStructure__element'>
+            <div className='allStructure__element' key={el.img}>
               <div className='allStructure__left'>
                 {el.img === 'WelcomeStructure' && <WelcomeStructure />}
                 {el.img === 'LogoStructure' && <LogoStructure />}

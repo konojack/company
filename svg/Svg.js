@@ -245,14 +245,14 @@ export const MapStructure = () => (
         points='573.35 138 573.47 347.5 660.47 347.5 660.47 261.5 809.47 261.5 826.97 239.06'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <polyline
         points='88.97 204.5 412.47 204.5 432.47 195.5 440.47 195.5 440.47 397.5 580.47 397.5 586.47 415.5 586.47 506.5 694.47 506.5 694.47 619'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -262,7 +262,7 @@ export const MapStructure = () => (
         y2='397.5'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -272,7 +272,7 @@ export const MapStructure = () => (
         y2='559.66'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -282,7 +282,7 @@ export const MapStructure = () => (
         y2='619'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -292,7 +292,7 @@ export const MapStructure = () => (
         y2='517.14'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -302,7 +302,7 @@ export const MapStructure = () => (
         y2='138'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -312,7 +312,7 @@ export const MapStructure = () => (
         y2='619'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -322,7 +322,7 @@ export const MapStructure = () => (
         y2='261.5'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -332,14 +332,14 @@ export const MapStructure = () => (
         y2='619'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <polyline
         points='87.97 370.82 349.69 370.82 483.2 517.14'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -349,7 +349,7 @@ export const MapStructure = () => (
         y2='397.5'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
       <line
@@ -359,7 +359,7 @@ export const MapStructure = () => (
         y2='443.98'
         fill='none'
         stroke='#444053'
-        stroke-miterlimit='10'
+        strokeMiterlimit='10'
         strokeWidth='3'
       />
     </g>
@@ -460,7 +460,7 @@ export const GiftStructure = () => (
       rx='5.42126'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <rect
       x='348.05673'
@@ -470,7 +470,7 @@ export const GiftStructure = () => (
       rx='5.42126'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <rect
       x='366.55673'
@@ -504,7 +504,7 @@ export const GiftStructure = () => (
       rx='5.42126'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <rect
       x='372.05673'
@@ -514,7 +514,7 @@ export const GiftStructure = () => (
       rx='5.42126'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <rect
       x='372.55673'
@@ -524,7 +524,7 @@ export const GiftStructure = () => (
       rx='5.42126'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M796.788,456.75H674.52024a4.86614,4.86614,0,0,0-4.86614,4.86614v16.26772a4.86614,4.86614,0,0,0,4.86614,4.86614h6.63386v82.63386a4.86614,4.86614,0,0,0,4.86614,4.86614H778.288a4.86615,4.86615,0,0,0,4.86614-4.86614V482.75H796.788a4.86615,4.86615,0,0,0,4.86614-4.86614V461.61614A4.86615,4.86615,0,0,0,796.788,456.75Z'
@@ -535,7 +535,7 @@ export const GiftStructure = () => (
       d='M504.05673,329.5h102a0,0,0,0,1,0,0v79.05512A9.44488,9.44488,0,0,1,596.61185,418H513.50161a9.44488,9.44488,0,0,1-9.44488-9.44488V329.5A0,0,0,0,1,504.05673,329.5Z'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <rect
       x='489.55673'
@@ -545,7 +545,7 @@ export const GiftStructure = () => (
       rx='7.69291'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <rect x='537.05673' y='307' width='24.5' height='111' fill='#6c63ff' />
     <rect
@@ -555,7 +555,7 @@ export const GiftStructure = () => (
       height='114'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M733.49646,425.96751c6.81721,11.68815,5.0013,25.44576,5.0013,25.44576s-12.86881-5.19262-19.686-16.88078-9.05638-23.0806-5.0013-25.44576S726.67924,414.27935,733.49646,425.96751Z'
@@ -572,14 +572,14 @@ export const GiftStructure = () => (
       transform='translate(-187.09737 -148.25)'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M746.49906,425.96751c-6.81722,11.68815-5.0013,25.44576-5.0013,25.44576s12.8688-5.19262,19.686-16.88078,9.05637-23.0806,5.0013-25.44576S753.31628,414.27935,746.49906,425.96751Z'
       transform='translate(-187.09737 -148.25)'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M341.28311,217.84168s20.21009,37.995,16.97648,58.20506-6.46723,37.995,0,47.69582-34.76136-1.61681-34.76136-1.61681V265.5375Z'
@@ -668,7 +668,7 @@ export const GiftStructure = () => (
       y2='603'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M945.87445,313.68414A20.81252,20.81252,0,1,0,948.646,273.7689l.52094,10.7122-5.06815-9.18045a20.734,20.734,0,0,0-10.68367,11.72261,20.40883,20.40883,0,0,0-1.19713,5.62986A20.80857,20.80857,0,0,0,945.87445,313.68414Z'
@@ -680,14 +680,14 @@ export const GiftStructure = () => (
       transform='translate(-187.09737 -148.25)'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M946.73156,310.9262a20.81252,20.81252,0,1,0,2.7716-39.91524l.52093,10.7122-5.06814-9.18045a20.734,20.734,0,0,0-10.68367,11.72261,20.40847,20.40847,0,0,0-1.19713,5.62986A20.80856,20.80856,0,0,0,946.73156,310.9262Z'
       transform='translate(-187.09737 -148.25)'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M968.408,251.72266A20.78819,20.78819,0,0,1,983.38792,238.525l1.71361,10.18378,3.177-10.69566A20.81,20.81,0,1,1,968.408,251.72266Z'
@@ -699,7 +699,7 @@ export const GiftStructure = () => (
       transform='translate(-187.09737 -148.25)'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M984.00138,361.73885a20.81,20.81,0,0,0,18.419-37.02267l-2.44121,8.21926-1.731-10.30382a.3621.3621,0,0,0-.053-.0201,20.81113,20.81113,0,1,0-14.1938,39.12733Z'
@@ -711,7 +711,7 @@ export const GiftStructure = () => (
       transform='translate(-187.09737 -148.25)'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M962.33445,396.30148a20.80132,20.80132,0,1,0,4.01059-16.29737l9.27266,13.95654L962.94776,386.553A20.61651,20.61651,0,0,0,962.33445,396.30148Z'
@@ -723,7 +723,7 @@ export const GiftStructure = () => (
       transform='translate(-187.09737 -148.25)'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
   </svg>
 );
@@ -1518,9 +1518,9 @@ export const TeamStructure = () => (
         y2='139.36'
         gradientUnits='userSpaceOnUse'
       >
-        <stop offset='0' stop-color='gray' stop-opacity='0.25' />
-        <stop offset='0.54' stop-color='gray' stop-opacity='0.12' />
-        <stop offset='1' stop-color='gray' stop-opacity='0.1' />
+        <stop offset='0' stopColor='gray' stopOpacity='0.25' />
+        <stop offset='0.54' stopColor='gray' stopOpacity='0.12' />
+        <stop offset='1' stopColor='gray' stopOpacity='0.1' />
       </linearGradient>
       <linearGradient
         id='8425757a-56ab-41b8-890b-c9acfe5ccb1b'
@@ -2627,14 +2627,14 @@ export const TeamStructure = () => (
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M540.61,823.91s3,2.94,6.29.84'
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M564,786.55s20-3.08,29.38,16.6a24,24,0,0,1-1.77,24.19c-3.11,4.39-7.7,7.66-14.07,5C563.34,826.51,564,786.55,564,786.55Z'
@@ -2677,14 +2677,14 @@ export const TeamStructure = () => (
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M584.8,823.91s-3,2.94-6.3.84'
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M553.2,842.91c.53-.1,10.5-4.41,20.78,0Z'
@@ -2706,14 +2706,14 @@ export const TeamStructure = () => (
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M518.28,857s1.33,5.56,6.37,1.42'
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M605.42,846.9h0c-.4,5.54-1.47,14.43-1.47,14.43s-4.45.54-11.33,1.16a5.81,5.81,0,0,1,0-1.16c.94-6.77.63-12,5-13.22C601.72,847,603.81,846.59,605.42,846.9Z'
@@ -2730,14 +2730,14 @@ export const TeamStructure = () => (
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M609.54,857s-1.34,5.56-6.38,1.42'
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M551.5,864.2c-4.06-.09-8-.3-11.65-.66l-3.63-12.22a7.93,7.93,0,0,1-.33-2.23,7.78,7.78,0,0,1,15.55-.05C551.48,853.8,551.52,859.83,551.5,864.2Z'
@@ -2754,14 +2754,14 @@ export const TeamStructure = () => (
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M540,867.56s-2.94,1-2.94,3.69'
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M591.71,849.09a7.91,7.91,0,0,1-.32,2.23L588,862.89c-3.58.29-7.6.57-11.85.81,0-4.32,0-10.07.07-14.66a7.77,7.77,0,0,1,15.54.05Z'
@@ -2778,14 +2778,14 @@ export const TeamStructure = () => (
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M587.63,867.56s2.94,1,2.94,3.69'
       transform='translate(-31.16 -20.14)'
       fill='none'
       stroke='#3f2b3b'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
     />
     <path
       d='M560.82,782.77s-14.81-.47-15.28,11,23.14,6.61,23.14,6.61,9.92-1.33,8.19-8.3S571.53,783.4,560.82,782.77Z'
@@ -3045,9 +3045,9 @@ export const StatsStructure = () => (
         y2='175.12'
         gradientUnits='userSpaceOnUse'
       >
-        <stop offset='0' stop-color='gray' stop-opacity='0.25' />
-        <stop offset='0.54' stop-color='gray' stop-opacity='0.12' />
-        <stop offset='1' stop-color='gray' stop-opacity='0.1' />
+        <stop offset='0' stopColor='gray' stopOpacity='0.25' />
+        <stop offset='0.54' stopColor='gray' stopOpacity='0.12' />
+        <stop offset='1' stopColor='gray' stopOpacity='0.1' />
       </linearGradient>
       <linearGradient
         id='9d815349-9c86-443c-8ccb-e4f40929397c'
@@ -3226,9 +3226,9 @@ export const SerwisStructure = () => (
         y2='275.63'
         gradientUnits='userSpaceOnUse'
       >
-        <stop offset='0' stop-color='gray' stop-opacity='0.25' />
-        <stop offset='0.54' stop-color='gray' stop-opacity='0.12' />
-        <stop offset='1' stop-color='gray' stop-opacity='0.1' />
+        <stop offset='0' stopColor='gray' stopOpacity='0.25' />
+        <stop offset='0.54' stopColor='gray' stopOpacity='0.12' />
+        <stop offset='1' stopColor='gray' stopOpacity='0.1' />
       </linearGradient>
     </defs>
     <title>logistics</title>
@@ -3612,9 +3612,9 @@ export const WelcomeStructure = () => (
         y2='349.80222'
         gradientUnits='userSpaceOnUse'
       >
-        <stop offset='0' stop-color='gray' stop-opacity='0.25' />
-        <stop offset='0.53514' stop-color='gray' stop-opacity='0.12' />
-        <stop offset='1' stop-color='gray' stop-opacity='0.1' />
+        <stop offset='0' stopColor='gray' stopOpacity='0.25' />
+        <stop offset='0.53514' stopColor='gray' stopOpacity='0.12' />
+        <stop offset='1' stopColor='gray' stopOpacity='0.1' />
       </linearGradient>
       <linearGradient
         id='b55aa966-9953-40ef-b933-2af4fb1d4bf9'
@@ -3687,7 +3687,7 @@ export const WelcomeStructure = () => (
       y2='668.01609'
       fill='none'
       stroke='#e0e0e0'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
       strokeWidth='8'
     />
     <g opacity='0.7'>
@@ -3710,7 +3710,7 @@ export const WelcomeStructure = () => (
       y2='676.01609'
       fill='none'
       stroke='#bdbdbd'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
       strokeWidth='5'
     />
     <line
@@ -3720,7 +3720,7 @@ export const WelcomeStructure = () => (
       y2='676.01609'
       fill='none'
       stroke='#bdbdbd'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
       strokeWidth='5'
     />
     <ellipse cx='289.20908' cy='467.51609' rx='94' ry='25.5' fill='#b84733' />
@@ -3732,7 +3732,7 @@ export const WelcomeStructure = () => (
       y2='539.48372'
       fill='none'
       stroke='#bdbdbd'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
       strokeWidth='5'
     />
     <line
@@ -3742,7 +3742,7 @@ export const WelcomeStructure = () => (
       y2='539.48372'
       fill='none'
       stroke='#bdbdbd'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
       strokeWidth='5'
     />
     <path
@@ -3853,7 +3853,7 @@ export const WelcomeStructure = () => (
       y2='714.10762'
       fill='none'
       stroke='#e0e0e0'
-      stroke-miterlimit='10'
+      strokeMiterlimit='10'
       strokeWidth='8'
     />
     <rect
@@ -4228,9 +4228,9 @@ export const EbookImg = () => (
         y2='105'
         gradientUnits='userSpaceOnUse'
       >
-        <stop offset='0' stop-color='gray' stop-opacity='0.25' />
-        <stop offset='0.54' stop-color='gray' stop-opacity='0.12' />
-        <stop offset='1' stop-color='gray' stop-opacity='0.1' />
+        <stop offset='0' stopColor='gray' stopOpacity='0.25' />
+        <stop offset='0.54' stopColor='gray' stopOpacity='0.12' />
+        <stop offset='1' stopColor='gray' stopOpacity='0.1' />
       </linearGradient>
       <linearGradient
         id='a49b107c-cf66-4ec6-8282-86ab0caa351c'
@@ -4247,9 +4247,9 @@ export const EbookImg = () => (
         y2='159'
         gradientUnits='userSpaceOnUse'
       >
-        <stop offset='0' stop-opacity='0.12' />
-        <stop offset='0.55' stop-opacity='0.09' />
-        <stop offset='1' stop-opacity='0.02' />
+        <stop offset='0' stopOpacity='0.12' />
+        <stop offset='0.55' stopOpacity='0.09' />
+        <stop offset='1' stopOpacity='0.02' />
       </linearGradient>
       <linearGradient
         id='b9a200bd-353c-4381-b6e1-073e5213fd80'

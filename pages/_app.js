@@ -53,9 +53,9 @@ function MyApp({ Component, pageProps }) {
   } else {
     return (
       <Layout>
-        <AnimatePresence exitBeforeEnter>
+        {/* <AnimatePresence exitBeforeEnter> */}
           <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
+        {/* </AnimatePresence> */}
       </Layout>
     );
   }
