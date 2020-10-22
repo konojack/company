@@ -5,6 +5,8 @@ import Link from 'next/link';
 function Navbar() {
   const [open, setOpen] = useState(false);
 
+
+
   return (
     <nav>
       <div className='logo'>
@@ -21,47 +23,35 @@ function Navbar() {
         {/* big menu */}
         <div className='menuContent'>
           <ul>
-            <li>
-              {/* <a href='#offer'>Serwis</a> */}
+            <li onClick={() => setOpen(!open)}>
               <Link href='/'>Home</Link>
             </li>
-            <li>
-              {/* <a href='#team'>O nas</a> */}
+            <li onClick={() => setOpen(!open)}>
               <Link href='/steps'>61 Krokow</Link>
             </li>
-            <li>
-              {/* <a href='#price'>Cennik</a> */}
+            <li onClick={() => setOpen(!open)}>
               <Link href='/structure'>Struktura</Link>
             </li>
-            <li>
+            <li onClick={() => setOpen(!open)}>
               <Link href='/ebook'>E-book</Link>
             </li>
-            {/* <li>
-              <a href='#contact'>Kontakt</a>
-            </li> */}
           </ul>
         </div>
         {/* small menu */}
         <div className='s-menuContent'>
           <ul>
-            <li>
-              {/* <a href='#offer'>Serwis</a> */}
+            <li onClick={() => setOpen(!open)}>
               <Link href='/'>Home</Link>
             </li>
-            <li>
-              {/* <a href='#team'>O nas</a> */}
+            <li onClick={() => setOpen(!open)}>
               <Link href='/steps'>61 Krokow</Link>
             </li>
-            <li>
-              {/* <a href='#price'>Cennik</a> */}
+            <li onClick={() => setOpen(!open)}>
               <Link href='/structure'>Struktura</Link>
             </li>
-            <li>
+            <li onClick={() => setOpen(!open)}>
               <Link href='/ebook'>Ebook</Link>
             </li>
-            {/* <li>
-              <a href='#contact'>Kontakt</a>
-            </li> */}
           </ul>
           <img src='favicon.ico' alt='logo' />
         </div>
