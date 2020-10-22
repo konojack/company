@@ -1,5 +1,11 @@
 .allSteps__container {
   padding-top: 6rem;
+
+  @include media('>=tablet') {
+    padding-top: 8rem;
+
+  }
+
   .allSteps__wrapper {
     .allSteps__box {
       text-align: center;
