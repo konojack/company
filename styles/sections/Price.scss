@@ -1,16 +1,18 @@
 .price__container {
-  margin-top: 6rem;
+  margin-top: 4rem;
+  position: relative;
+  padding-top: 2rem;
 
   @include media('>=phone') {
-    margin-top: 8rem;
-  }
-
-  @include media('>=tablet') {
     margin-top: 6rem;
   }
 
+  @include media('>=tablet') {
+    margin-top: 4rem;
+  }
+
   @include media('>=laptop') {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 
   .price__wrapper {
@@ -57,6 +59,17 @@
         font-weight: 700;
         text-decoration: underline;
       }
+    }
+  }
+
+  .price__tlo {
+    position: absolute;
+    top: -18rem;
+    right: 0;
+    z-index: -3;
+    
+    @include media('>=tablet') {
+      top: -13rem;
     }
   }
 }

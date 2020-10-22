@@ -37,10 +37,15 @@ nav {
     border: 1px solid #e9e9e9;
   }
   .menu.active {
-    width: calc(100% - 40vw);
+    width: 13rem;
 
     @include media('<tablet') {
       height: 18rem;
+      max-width: 13rem;
+    }
+
+    @include media('>=tablet') {
+      width: 29rem;
     }
   }
   .menu.active .menuContent *,
@@ -65,7 +70,7 @@ nav {
     position: absolute;
     right: 0;
     cursor: pointer;
-    background: #fcfcfd;
+    background: #f1f0ff;
     z-index: 1;
   }
   .menu span i {
@@ -76,7 +81,7 @@ nav {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #000;
+    background-color: $blueColorDark;
     transition: 0.3s;
   }
   .menu span i:nth-child(1) {
@@ -112,7 +117,7 @@ nav {
     border-right: none;
   }
   .menu .menuContent ul li {
-    display: inline-block;
+    display: flex;
     color: #2d3235;
     cursor: pointer;
     position: relative;
@@ -125,6 +130,8 @@ nav {
 
   .menu .menuContent ul li a {
     color: $blueColorDark;
+    height: 100%;
+    width: 100%;
   }
 
   // small menu

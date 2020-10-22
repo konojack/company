@@ -1,3 +1,33 @@
 footer {
-    height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @include media('>=570px') {
+    flex-direction: row;
+  }
+  @include media('>=tablet') {
+    padding: 1rem 7rem;
+  }
+
+  p {
+    line-height: 1.4rem;
+    color: $blueColorDark;
+  }
+
+  .copy {
+    font-size: .8rem;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 15.5rem;
+
+    p {
+        font-weight: 700;
+    }
+  }
 }

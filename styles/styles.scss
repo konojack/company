@@ -1,9 +1,8 @@
 @import './normalize.scss';
-
+@import 'utils/reusable.scss';
 @import 'utils/mixin.scss';
 @import 'utils/scroll.scss';
 @import 'utils/breakpoints.scss';
-@import 'utils/reusable.scss';
 @import 'utils/404.scss';
 @import 'utils/error.scss';
 
@@ -20,6 +19,12 @@
 @import 'sections/Team.scss';
 @import 'sections/Contact.scss';
 
+//ebook
+@import 'sections/ebook/EbookInfo.scss';
+@import 'sections/ebook/GetEbook.scss';
+//steps
+@import 'sections/steps/StepsInfo.scss';
+@import 'sections/steps/AllSteps.scss';
 
 @font-face {
   //   font-family: maelstrom;
@@ -36,6 +41,7 @@ html {
   // @include fluid-type($min_width, $max_width, $min_font, $max_font);
   font-size: 18px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,6 +52,7 @@ body {
   color: #000;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
+  user-select: none;
 }
 
 *,

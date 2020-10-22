@@ -39,3 +39,57 @@ $redColor: #fd2539;
         border: .15rem solid $blueColor;
     }
 }
+
+@keyframes animationFramesTwo {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+    20% {
+      transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+    }
+    40% {
+      transform: translate(141px, 72px) rotate(72deg) scale(1);
+    }
+    60% {
+      transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+    }
+    80% {
+      transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+  }
+  
+  @keyframes animationFramesThree {
+    0% {
+      transform: translate(165px, -179px);
+    }
+    100% {
+      transform: translate(-346px, 617px);
+    }
+  }
+  
+  @keyframes animationFramesFour {
+    0% {
+      transform: translate(-300px, 151px) rotate(0deg);
+    }
+    100% {
+      transform: translate(251px, -200px) rotate(180deg);
+    }
+  }
+  
+  @keyframes jump {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    40% {
+      -webkit-transform: translate3d(0, 50%, 0);
+      transform: translate3d(0, 50%, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }

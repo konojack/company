@@ -14,7 +14,7 @@ body::-webkit-scrollbar-track {
   // -webkit-box-shadow: inset 0 0 6px #fff;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #000;
+    background-color: $blueColorDark;
     outline: 1px solid slategrey;
     transition: .5s;
 }

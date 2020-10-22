@@ -2,7 +2,7 @@ import React from 'react';
 
 function Price() {
   return (
-    <div className='price__container'>
+    <div className='price__container' id='price'>
       <div className='price__wrapper'>
         <div className='price__box'>
           <h3 className='main__one'>Cennik</h3>
@@ -21,6 +21,7 @@ function Price() {
             <p className='last__msg'>Pierwsza rata po 3 miesiacach od zakupu</p>
         </div>
       </div>
+      <img src='./tlooo.png' className='price__tlo' />
     </div>
   );
 }

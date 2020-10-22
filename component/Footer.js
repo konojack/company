@@ -5,8 +5,12 @@ import React from 'react'
 function Footer() {
     return (
         <footer>
-       
-            {/* <p>{t('name')}</p> */}
+            <p className='copy'>&copy; 2020 Copyright all right reserved</p>
+            <div>
+                <p>+514088872</p>
+                <p>email@email.com</p>
+            </div>
+            
         </footer>
     )
 }

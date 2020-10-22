@@ -1,12 +1,14 @@
 .generalInfo__container {
-  margin-top: 3rem;
+  margin-top: 1rem;
+  position: relative;
+  padding-top: 2rem;
 
   @include media('>=phone') {
-    margin-top: 0rem;
+    margin-top: -2rem;
   }
 
   @include media('>=tablet') {
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
 
   .generalInfo__wrapper {
@@ -69,6 +71,21 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+  }
+
+  .generalInfo__tlo {
+    position: absolute;
+    top: 15rem;
+    top: 8rem;
+    left: 0;
+    transform: rotateY(180deg);
+    z-index: -3;
+
+    @include media('>=tablet') {
+      width: 60%;
+      height: 60%;
     }
   }
 }

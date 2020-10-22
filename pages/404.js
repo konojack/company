@@ -16,29 +16,29 @@ function NoPage() {
   //   return <div>{msg(language)}</div>;
   return (
     <div>
-      <div class='center404'>
-        <div class='error404'>
-          <div class='number404'>4</div>
-          <div class='illustration404'>
-            <div class='circle404'></div>
-            <div class='clip404'>
-              <div class='paper404'>
-                <div class='face404'>
-                  <div class='eyes404'>
-                    <div class='eye404 eye404-left'></div>
-                    <div class='eye404 eye404-right'></div>
+      <div className='center404'>
+        <div className='error404'>
+          <div className='number404'>4</div>
+          <div className='illustration404'>
+            <div className='circle404'></div>
+            <div className='clip404'>
+              <div className='paper404'>
+                <div className='face404'>
+                  <div className='eyes404'>
+                    <div className='eye404 eye404-left'></div>
+                    <div className='eye404 eye404-right'></div>
                   </div>
-                  <div class='rosyCheeks404 rosyCheeks404-left'></div>
-                  <div class='rosyCheeks404 rosyCheeks404-right'></div>
-                  <div class='mouth404'></div>
+                  <div className='rosyCheeks404 rosyCheeks404-left'></div>
+                  <div className='rosyCheeks404 rosyCheeks404-right'></div>
+                  <div className='mouth404'></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class='number404'>4</div>
+          <div className='number404'>4</div>
         </div>
 
-        <div class='text404'>Oops. The page you're looking for doesn't exist.</div>
+        <div className='text404'>Oops. The page you're looking for doesn't exist.</div>
         <Link href='/'>Back home</Link>
       </div>
 
