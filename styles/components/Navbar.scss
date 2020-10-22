@@ -1,10 +1,13 @@
 nav {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94.5%;
+  z-index: 999;
 
   .logo {
-    position: fixed;
+    position: absolute;
     left: 5vw;
     top: 20px;
     width: 60px;
@@ -28,7 +31,7 @@ nav {
     right: 5vw;
     top: 20px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     overflow: hidden;
     transition: all 0.2s ease;
     z-index: 999;
