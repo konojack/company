@@ -60,6 +60,16 @@ body {
   margin: 0 auto;
 }
 
+.bg-fixed {
+  background: url('../public/bg1.png');
+  position: fixed;
+  left:0;
+  top:0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -9;
+}
+
 *,
 *::before,
 *::after {
@@ -84,23 +94,23 @@ body {
   //     width: 100%;
   //   }
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 1px;
-    background-color: rgb(241 240 255);
-    z-index: -2;
-  }
+  // &::before,
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   height: 100%;
+  //   width: 1px;
+  //   background-color: rgb(241 240 255);
+  //   z-index: -2;
+  // }
 
-  &::before {
-    left: 10%;
-  }
-  &::after {
-    right: 10%;
-  }
+  // &::before {
+  //   left: 10%;
+  // }
+  // &::after {
+  //   right: 10%;
+  // }
 }
 
 .layout__wrapper {

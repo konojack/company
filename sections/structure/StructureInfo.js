@@ -24,12 +24,6 @@ function StructureInfo() {
             <p>
             W celu stworzenia profesjonalnej strony internetowej, ktora bedzie zarowno dynamiczna jak i nowoczesna, postanowilismy rozwinac dotychczasowy sposob na tworzenie stron o wi
             </p>
-            <br />
-            <p>
-         
-            </p>
-            <br />
-            <p></p>
           </div>
         </div>
       </div>

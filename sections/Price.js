@@ -21,7 +21,7 @@ function Price() {
             <p className='last__msg'>Pierwsza rata po 3 miesiacach od zakupu</p>
         </div>
       </div>
-      <img src='./tlooo.png' className='price__tlo' />
+      {/* <img src='./tlooo.png' className='price__tlo' /> */}
     </div>
   );
 }

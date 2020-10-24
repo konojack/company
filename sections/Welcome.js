@@ -58,8 +58,8 @@ function Welcome() {
         </div>
       </div>
 
-      {/* 0 tlo */}
-      <img src='./tlooo.png' className='welcome__tlo' />
+      {/* tlo */}
+      {/* <img src='./tlooo.png' className='welcome__tlo' /> */}
 
       <div className='welcome__elementy'>
         <Circle />

@@ -69,7 +69,7 @@ function GeneralInfo() {
           />
         )}
       </div>
-      <img src='./tlooo.png' className='generalInfo__tlo' />
+      {/* <img src='./tlooo.png' className='generalInfo__tlo' /> */}
     </div>
   );
 }

@@ -4,6 +4,8 @@ footer {
   padding: 1rem;
   flex-direction: column-reverse;
   align-items: center;
+  min-height: 10rem;
+  border-top: 0.1rem solid #ebedf0;
 
   @include media('>=570px') {
     flex-direction: row;
@@ -18,7 +20,7 @@ footer {
   }
 
   .copy {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   div {
@@ -27,7 +29,7 @@ footer {
     width: 15.5rem;
 
     p {
-        font-weight: 700;
+      font-weight: 700;
     }
   }
 }

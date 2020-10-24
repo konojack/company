@@ -9,6 +9,7 @@ function Layout({ children }) {
       <div className='layout__container'>
         {/* <Grid /> */}
         {/* <Intro /> */}
+        <div className='bg-fixed'></div>
         <Navbar />
         <div className='layout__wrapper'>{children}</div>
         <Footer />

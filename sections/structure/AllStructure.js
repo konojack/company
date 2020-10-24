@@ -23,7 +23,7 @@ function AllStructure() {
       <div className='allStructure__wrapper'>
         <div className='allStructure__box'>
           <h3 className='main__one'>Lista</h3>
-          <h2 className='main__two'>Wszystkich selekcji</h2>
+          <h2 className='main__two'>Wszystkie selekcje</h2>
           <p>Ponizej obowiazkowe i opcjonalne sekcje</p>
         </div>
 
