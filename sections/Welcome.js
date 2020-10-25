@@ -18,7 +18,7 @@ function Welcome() {
           <div className='welcome__box-left-content'>
             <p className='dobrazmiana'>Dobra zmiana</p>
             <h1 className='title'>
-              Landing Page <br /> dla Tlumaczy <br /> Jezykow Obcych
+              Interaktywne <br /> strony <br /> wizytowkowe
             </h1>
             <div className='option'>
               <div className='left__option'>
@@ -32,7 +32,7 @@ function Welcome() {
                 </p>
                 <p>
                   <Checked />
-                  Profesjonalne
+                  Interaktywne
                 </p>
               </div>
               <div className='right__option'>

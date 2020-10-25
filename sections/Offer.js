@@ -128,6 +128,7 @@ function Offer() {
                   80% firm wykorzystuje ta czesc tylko w 20%. My uzyjemy jej w
                   100%.
                 </p>
+                <p>&#40; Z prawej strony przyklad tego jak moze wygladac Google Moja Firma &#41; &rarr;</p>
                 <p className='buttonGo buttonBlue'>
                   <Link href='/business'>Zobacz &rarr;</Link>
                 </p>
