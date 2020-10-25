@@ -1,53 +1,36 @@
 .price__container {
-  margin-top: 4rem;
+  // margin-top: 4rem;
+  margin-top: 8rem;
   position: relative;
   padding-top: 2rem;
 
-  @include media('>=phone') {
-    margin-top: 6rem;
-  }
+  // @include media('>=phone') {
+  //   margin-top: 6rem;
+  // }
 
-  @include media('>=tablet') {
-    margin-top: 4rem;
-  }
+  // @include media('>=tablet') {
+  //   margin-top: 4rem;
+  // }
 
-  @include media('>=laptop') {
-    margin-top: 8rem;
-  }
+  // @include media('>=laptop') {
+  //   margin-top: 8rem;
+  // }
 
   .price__wrapper {
     text-align: center;
+    .promotion_info {
+      padding: 2rem 0 3rem 0;
+      font-weight: 700;
+      background-color: #fff;
+      margin: 4rem 0;
 
-    .price__box {
-    }
-    .price__info {
-      padding: 2rem 1rem;
-      background: #fbfbff;
-      border: 1px solid #e9e9e9;
-      max-width: 16rem;
-      margin: 0 auto;
-      border-radius: 0.1rem;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-      &:hover {
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-          0 10px 10px rgba(0, 0, 0, 0.22);
-      }
-
-      p {
-        line-height: 1.4rem;
-        color: $blueColorDark;
-      }
-      .price {
-        font-size: 2rem;
-      }
       .raty {
         color: red;
         margin-bottom: 0.5rem;
       }
-      .raty___option {
+      .procent {
         margin-top: 0.5rem;
+        font-size: 5rem;
       }
       .no__pay {
         font-weight: 700;
@@ -60,6 +43,60 @@
         text-decoration: underline;
       }
     }
+    .prices {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      @include media('>=tablet') {
+        flex-direction: row;
+      }
+
+      .price__info {
+        padding: 2rem 1rem;
+        background: #fbfbff;
+        border: 1px solid #e9e9e9;
+        max-width: 16rem;
+        margin: 1rem auto;
+        border-radius: 0.1rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .pakiet__title {
+          font-weight: 700;
+        }
+
+        p {
+          line-height: 1.4rem;
+          color: $blueColorDark;
+          span {
+            color: green;
+            font-weight: 700;
+          }
+        }
+        .price {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        .maleinfo {
+          font-size: .7rem;
+        }
+      }
+
+      .coming {
+        opacity: .5;
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
   }
 
   .price__tlo {
@@ -67,7 +104,7 @@
     top: -18rem;
     right: 0;
     z-index: -3;
-    
+
     @include media('>=tablet') {
       top: -13rem;
     }

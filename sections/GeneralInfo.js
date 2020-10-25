@@ -9,10 +9,10 @@ function GeneralInfo() {
     ww(window.innerWidth);
   }, []);
 
-  const playVideo = () => {
-    setPlayMe(true)
-    document.querySelector('.button__container').style.display = 'none'
-    }
+  // const playVideo = () => {
+  //   setPlayMe(true)
+  //   document.querySelector('.button__container').style.display = 'none'
+  //   }
 
   return (
     <div className='generalInfo__container'>
@@ -32,7 +32,7 @@ function GeneralInfo() {
         </div>
       </div>
 
-      <div className='video__container'>
+      {/* <div className='video__container'>
         <div className='button__container'>
           <span className='buttonPLAY buttonBlue' onClick={() => playVideo()}>
             Nacisnij
@@ -68,7 +68,7 @@ function GeneralInfo() {
             playing={playMe}
           />
         )}
-      </div>
+      </div> */}
       {/* <img src='./tlooo.png' className='generalInfo__tlo' /> */}
     </div>
   );

@@ -3,17 +3,17 @@
   position: relative;
   padding-top: 1rem;
 
-  @include media('>=phone') {
-    margin-top: 7rem;
-  }
+  // @include media('>=phone') {
+  //   margin-top: 7rem;
+  // }
 
-  @include media('>=tablet') {
-    margin-top: 5rem;
-  }
+  // @include media('>=tablet') {
+  //   margin-top: 5rem;
+  // }
 
-  @include media('>=laptop') {
-    margin-top: 5rem;
-  }
+  // @include media('>=laptop') {
+  //   margin-top: 5rem;
+  // }
 
   .contact__wrapper {
     display: flex;

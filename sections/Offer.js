@@ -1,6 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import { Trophy, Steps, Free, MalyTriangle, Krezka, Circle2, Circle} from '../svg/Svg';
+import {
+  Trophy,
+  Steps,
+  Free,
+  MalyTriangle,
+  Krezka,
+  Circle2,
+  Circle,
+  Deal,
+} from '../svg/Svg';
 
 function Offer() {
   return (
@@ -20,15 +29,40 @@ function Offer() {
           <div className='offer__element'>
             <div className='element__left'>
               <Trophy />
-              <h3>15 Sekcji</h3>
+              <h3>14 Sekcji</h3>
             </div>
             <div className='element__right'>
               <p>
-              <span>11 wyselekcjonowanych sekcji</span> <br />
-                + 4 opcjonalne <br />+ niezliczona ilosc sekcji na Panstwa
-                zyczenie
+                <span>Wyselekcjonowanych Sekcje</span>{' '}
               </p>
-              <p className='buttonGo buttonBlue'><Link href='/structure'>Zobacz &rarr;</Link></p>
+              <div className='sekcja__wrapper'>
+                <div>
+                  <p>1&#41; Sekcja Powitalna</p>
+                  <p>2&#41; Sekcja Logo</p>
+                  <p>3&#41; Sekcja Opis ogolny</p>
+                  <p>4&#41; Sekcja Statystyki</p>
+                  <p>5&#41; Sekcja Serwis</p>
+                </div>
+                <div>
+                  <p>6&#41; Sekcja O Nas</p>
+                  <p>7&#41; Sekcja Video</p>
+                  <p>8&#41; Sekcja Certyfikaty</p>
+                  <p>9&#41; Sekcja Prezentacja</p>
+                  <p>10&#41; Sekcja Cennik</p>
+                </div>
+                <div>
+                  <p>11&#41; Sekcja Opinie Klientow</p>
+                  <p>12&#41; Sekcja Prezent</p>
+                  <p>13&#41; Sekcja Mapa + Kontakt</p>
+                  <p>14&#41; Sekcja Nawigacja + Footer</p>
+                  <p>
+                    <span>+ niezliczona ilosc sekcji na Panstwa zyczenie</span>
+                  </p>
+                </div>
+              </div>
+              <p className='buttonGo buttonBlue'>
+                <Link href='/structure'>Zobacz &rarr;</Link>
+              </p>
             </div>
           </div>
           {/* 2 */}
@@ -39,7 +73,10 @@ function Offer() {
             </div>
             <div className='element__right'>
               <p>
-                <span>60 krokow podjetych w celu stworzenia profesjonalnej strony internetowej.</span>
+                <span>
+                  60 krokow podjetych w celu stworzenia profesjonalnej strony
+                  internetowej.
+                </span>
               </p>
               <p>W tym:</p>
               <p>
@@ -62,19 +99,50 @@ function Offer() {
                 pod kazde urzadzenie i przegladarke internetowa co do pixela{' '}
               </p>
               <p>
-                <span># Instalacja i optymalizacja Swietej trojki:</span> <br />Google
-                My Business Page - bardzo wazna czesc informacyjna o firmie,
-                widoczna po prawej stronie ekranu, po wyszukaniu w Google. 80%
-                firm wykorzystuje ta czesc tylko w 20%. My uzyjemy jej w 100%.
-                <br />
+                <span># Instalacja i optymalizacja:</span> <br />
                 Google Search console i Google Analytics - profesjonalne
                 narzedzia do kontroli statystyk, pomagajace dotrzec do wiekszej
                 ilosci klientow
               </p>
-              <p className='buttonGo buttonBlue'><Link href='/steps'>Zobacz &rarr;</Link></p>
+              <p className='buttonGo buttonBlue'>
+                <Link href='/steps'>Zobacz &rarr;</Link>
+              </p>
             </div>
           </div>
           {/* 3 */}
+          <div className='offer__element'>
+            <div className='element__left'>
+              <Deal />
+              <h3>Google My Business Page</h3>
+            </div>
+            <div className='element__right element__right-withPhoto'>
+              <div className='googlePageText'>
+                <p>
+                  <span>Google My Business Page</span>
+                </p>
+                <p>
+                  Bardzo wazna czesc informacyjna o firmie, widoczna po prawej
+                  stronie ekranu, po wyszukaniu w Google.{' '}
+                </p>
+                <p>
+                  80% firm wykorzystuje ta czesc tylko w 20%. My uzyjemy jej w
+                  100%.
+                </p>
+                <p className='buttonGo buttonBlue'>
+                  <Link href='/business'>Zobacz &rarr;</Link>
+                </p>
+              </div>
+
+              <div className='googlePage'>
+                <img src='./1gg.png' alt='' />
+                <img src='./2gg.png' alt='' />
+                <img src='./3gg.png' alt='' />
+                <img src='./4gg.png' alt='' />
+                <img src='./5gg.png' alt='' />
+              </div>
+            </div>
+          </div>
+          {/* 4 */}
           <div className='offer__element'>
             <div className='element__left red'>
               <Free />
@@ -88,7 +156,9 @@ function Offer() {
                 marketingowego, social media i sposobow na zdobycie wiekszej
                 ilosci klientow.
               </p>
-              <p className='buttonGo buttonBlue'><Link href='/ebook'>Zobacz &rarr;</Link></p>
+              <p className='buttonGo buttonBlue'>
+                <Link href='/ebook'>Zobacz &rarr;</Link>
+              </p>
             </div>
           </div>
         </div>
@@ -105,5 +175,3 @@ function Offer() {
 }
 
 export default Offer;
-
-
