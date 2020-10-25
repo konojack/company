@@ -2,6 +2,8 @@ import React, { Component, useState, useEffect, useRef } from 'react';
 import { Player, ControlBar } from 'video-react';
 import { Left } from '../svg/Svg';
 
+//https://video-react.js.org/components/player/
+
 export default class Video extends Component {
   state = {
     showVideo: false,
@@ -58,11 +60,6 @@ export default class Video extends Component {
         <span
           className={`toggleVideo`}
           onClick={() => this.hideOrOpen()}
-          //   style={{
-          //     transform: this.state.showVideo
-          //       ? 'rotateY(0deg)'
-          //       : 'rotateY(-180deg)',
-          //   }}
         >
           <Left />
         </span>
