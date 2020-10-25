@@ -2,6 +2,8 @@
   margin-top: 1rem;
   position: relative;
   padding-top: 2rem;
+  padding: 1rem 0;
+  background-color: #fff;
 
   @include media('>=phone') {
     margin-top: -2rem;

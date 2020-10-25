@@ -17,7 +17,7 @@ function Offer() {
       <div className='offer__wrapper'>
         <div className='offer__box'>
           <h3 className='main__one'>Co oferujemy</h3>
-          <h2 className='main__two'>Strony Landing Page</h2>
+          <h2 className='main__two'>Interaktywne wizytowki</h2>
           <p>
             Idealne rozwiazanie dla osob pracujacych w pojedynke badz mniejszych
             firm.
@@ -33,7 +33,7 @@ function Offer() {
             </div>
             <div className='element__right'>
               <p>
-                <span>Wyselekcjonowanych Sekcje</span>{' '}
+                <span>Wyselekcjonowane Sekcje</span>{' '}
               </p>
               <div className='sekcja__wrapper'>
                 <div>
@@ -122,16 +122,15 @@ function Offer() {
                 </p>
                 <p>
                   Bardzo wazna czesc informacyjna o firmie, widoczna po prawej
-                  stronie ekranu, po wyszukaniu w Google.{' '}
+                  stronie ekranu, po wyszukaniu w Google.
                 </p>
                 <p>
                   80% firm wykorzystuje ta czesc tylko w 20%. My uzyjemy jej w
                   100%.
                 </p>
+                <p>Zadbamy o kazda mozliwa pozycje dla Google Moja Firma.</p>
+                <p>Damy Panstwu rady jak dbac o to by strona pozyskiwala pozytywne komentarze i byla wysoko oceniana.</p>
                 <p>&#40; Z prawej strony przyklad tego jak moze wygladac Google Moja Firma &#41; &rarr;</p>
-                <p className='buttonGo buttonBlue'>
-                  <Link href='/business'>Zobacz &rarr;</Link>
-                </p>
               </div>
 
               <div className='googlePage'>
@@ -151,12 +150,12 @@ function Offer() {
             </div>
             <div className='element__right'>
               <p>
-                <span>Content Marketing i Social Media</span>
-                <br />
-                Zbior najlepszych zasad dotyczacych tworzenia contentu
-                marketingowego, social media i sposobow na zdobycie wiekszej
-                ilosci klientow.
+                <span>"Content Marketing i Social Media"</span>
+                <p>Przygotowalismy dla Panstwa E-book. </p>
+                Jest to pelen informacji zbior najlepszych zasad dotyczacych tworzenia contentu <br />
+                marketingowego, social media i sposobow na zdobycie wiekszej ilosci klientow.
               </p>
+              <p style={{color: '#fd2e41'}}>E-book jest w 100% darmowy.</p>
               <p className='buttonGo buttonBlue'>
                 <Link href='/ebook'>Zobacz &rarr;</Link>
               </p>
