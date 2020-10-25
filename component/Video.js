@@ -14,13 +14,13 @@ function Video() {
   useEffect(() => {
     setTimeout(() => {
       setOpen(true);
-    }, 1000)
+    }, 1000);
   }, []);
 
   useEffect(() => {
     progressRef.current.addEventListener('click', scrub);
     progressRef.current.addEventListener('mousemove', (e) => mouse && scrub(e));
-  }, [progressRef])
+  }, [progressRef]);
 
   const togglePlay = () => {
     const method = videoRef.current.paused ? 'play' : 'pause';
@@ -40,7 +40,7 @@ function Video() {
 
   const scrub = (e) => {
     const scrubTime =
-    (e.offsetX / progressRef.current.offsetWidth) * videoRef.current.duration;
+      (e.offsetX / progressRef.current.offsetWidth) * videoRef.current.duration;
     videoRef.current.currentTime = scrubTime;
   };
 
@@ -50,60 +50,67 @@ function Video() {
   };
 
   return (
-    <div className={`interactive ${open ? 'open' : ''}`}>
-      <span className='toggleVideo' onClick={() => hideOrOpen()}>
-        <Left />
-      </span>
+    <>
+      <R />
+      <div className={`interactive ${open ? 'open' : ''}`}>
+        <span className='toggleVideo' onClick={() => hideOrOpen()}>
+          <Left />
+        </span>
 
-      <div className='player'>
-        <video
-          class='player__video viewer'
-          src='./video2.mp4'
-          onClick={() => togglePlay()}
-          onPlay={() => updateButton()}
-          onPause={() => updateButton()}
-          onTimeUpdate={() => handleProgress()}
-          ref={videoRef}
-        ></video>
-
-        <div class='player__controls'>
-          <div
-            class='progress'
-            // onClick={(e) => scrub(e)}
-            // onMouseMove={(e) => mouse && scrub(e)}
-            onMouseDown={() => setMouse(true)}
-            onMouseUp={() => setMouse(false)}
-            ref={progressRef}
-          >
-            <div class='progress__filled' ref={progressBarRef}></div>
-          </div>
-          <button
-            class='player__button toggle'
-            title='Toggle Play'
+        <div className='player'>
+          <video
+            class='player__video viewer'
+            src='./video2.mp4'
             onClick={() => togglePlay()}
-            ref={toggleRef}
-          >
-            ►
-          </button>
+            onPlay={() => updateButton()}
+            onPause={() => updateButton()}
+            onTimeUpdate={() => handleProgress()}
+            ref={videoRef}
+          ></video>
+
+          <div class='player__controls'>
+            <div
+              class='progress'
+              // onClick={(e) => scrub(e)}
+              // onMouseMove={(e) => mouse && scrub(e)}
+              onMouseDown={() => setMouse(true)}
+              onMouseUp={() => setMouse(false)}
+              ref={progressRef}
+            >
+              <div class='progress__filled' ref={progressBarRef}></div>
+            </div>
+            <button
+              class='player__button toggle'
+              title='Toggle Play'
+              onClick={() => togglePlay()}
+              ref={toggleRef}
+            >
+              ►
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
 export default Video;
 
-
-
-
-
 // 1. https://github.com/vivekjne/video-player-react-youtube
 
 // 2. NORMALNY HTML INBUILT TEZ DZIALA - ale mniej ladny
+const R = () => (
+  <div class='interactive open' style={{background: 'black', bottom: '15rem'}}>
+    <span class='toggleVideo'></span>
+    <div>
+      <video width='322' height='182' controls>
+        <source src='./video2.mp4' type='video/mp4' />
+      </video>
+    </div>
+  </div>
+);
 
-// 3. TU LADNIE ALE PO DEPLOY ZLE DZIALA
-
-// https://video-react.js.org/
+// 3. TU LADNIE ALE PO DEPLOY ZLE DZIALA   https://video-react.js.org/
 
 // export default class Video extends Component {
 //   state = {
