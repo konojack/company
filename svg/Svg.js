@@ -1,3 +1,41 @@
+export const Left = () => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    version='1.1'
+    id='Capa_1'
+    x='0px'
+    y='0px'
+    viewBox='0 0 32 32'
+  >
+    <g>
+      <g id='transfer'>
+        <g>
+          <polygon
+            points='32,24 7.992,24 7.992,28 0,22 7.992,16 7.992,20 32,20    '
+          />
+          <polygon
+            points='0,12 24,12 24,16 32,10 24,4 24,8 0,8    '
+          />
+        </g>
+      </g>
+    </g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+    <g></g>
+  </svg>
+);
 export const Deal = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
