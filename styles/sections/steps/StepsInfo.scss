@@ -1,8 +1,6 @@
 .stepsInfo__container {
     position: relative;
-    .stepsInfo__wrapper {
-      padding: 1rem;
-  
+    .stepsInfo__wrapper { 
       .stepsInfo__box {
         text-align: center;
         padding-top: 9rem;
@@ -47,13 +45,11 @@
       .steps__manage {
         display: flex;
         flex-direction: column;
-        max-width: 20rem;
         margin: 0 auto;
       //   padding-top: 5rem;
   
         @include media('>=tablet') {
           flex-direction: row;
-          max-width: 57rem;
         }
         .steps__image {
           width: 100%;
@@ -78,7 +74,6 @@
           }
   
           p {
-              line-height: 1.4rem;
               color: $blueColor;
           }
         }

@@ -1,19 +1,14 @@
 .welcome__container {
-  height: 39rem;
+  height: 36rem;
   position: relative;
 
   .welcome__wrapper {
     display: flex;
     padding: 5rem 0.5rem;
+    position: relative;
 
     @include media('>=tablet') {
       padding: 3rem 0rem;
-    }
-
-    .welcome__box {
-      @include media('>=tablet') {
-        padding-top: 5rem;
-      }
     }
 
     .welcome__box-left {
@@ -22,16 +17,14 @@
       height: 24rem;
       width: 100%;
 
-      @include media('>=tablet') {
-        width: 50%;
-      }
+      // @include media('>=tablet') {
+      //   width: 60%;
+      // }
 
       .welcome__box-left-content {
         @include media('>=tablet') {
-          position: absolute;
-          top: 2rem;
-          left: 4rem;
-          width: 32rem;
+          text-align: left;
+          padding-left: 1rem;
         }
 
         .dobrazmiana {
@@ -41,21 +34,22 @@
           padding: 0.1rem 0.25rem;
           border-radius: 0.1rem;
           color: $blueColorDark;
+          margin-top: 2rem;
+          font-size: 1rem;
 
           @include media('>=tablet') {
-            transform: translate(-6rem, 20px);
+            transform: translate(0rem, 20px);
           }
         }
 
         .title {
-          font-size: 2.5rem;
           font-weight: 800;
           color: $blueColorDark;
           min-height: 12rem;
-          margin: 2rem 0 2rem 0;
+          margin: 1rem 0 1rem 0;
 
           @include media('>=tablet') {
-            font-size: 70px;
+            font-size: 48px;
           }
         }
 
@@ -63,63 +57,59 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding: 1rem 0 0 1rem;
+          padding: 0 0;
           color: $blueColor;
+          font-size: 32px;
+          font-weight: 700;
 
           .left__option,
           .right__option {
             text-align: left;
 
-            p {
-              line-height: 1.4rem;
-            }
-
             .checked {
-              width: 1rem;
+              width: 1.2rem;
               margin-right: 0.5rem;
               fill: $blueColor;
             }
           }
 
           .left__option {
-            margin-right: 2rem;
+            margin-right: 1rem;
+          }
+          
+          @include media('>=550px') {
+            flex-direction: row;
+            padding: 0.8rem 0;
           }
 
-          @include media('>=phone') {
-            flex-direction: row;
-            padding: 0rem;
+          @include media('>=tablet') {
+            justify-content: left;
           }
         }
 
         .e-book {
           display: inline-block;
-          transform: translate(0rem, 2rem);
-
-          @include media('>=phone') {
-            transform: translate(-6.1rem, 2rem);
-          }
+          transform: translate(0rem, 1rem);
         }
       }
     }
 
-    .welcome__box-right {
+    .pageImg__absolute {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 45rem;
+      transform: translate(-1rem, -3rem);
+      position: absolute;
+      z-index: 0;
+      max-height: 38rem;
+      top: 8rem;
+      z-index: -1;
       display: none;
-      position: relative;
 
       @include media('>=tablet') {
-        display: flex;
-        width: 50%;
-      }
-
-      .teacher {
-        height: 100%;
-        transform: translateX(-5rem);
-        position: absolute;
-        z-index: 0;
-        max-height: 38rem;
-        top: 8rem;
-        left: -3rem;
-        z-index: -1;
+        display: block;
       }
     }
   }

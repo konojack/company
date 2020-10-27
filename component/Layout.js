@@ -29,7 +29,7 @@ function Layout({ children }) {
           <source src='./video.mp4' />
         </Player>
       </div> */}
-        <Video />
+        {/* <Video /> */}
       <Navbar />
       <div className='layout__wrapper'>{children}</div>
       <Footer />

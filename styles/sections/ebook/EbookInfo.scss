@@ -47,13 +47,11 @@
     .ebook__manage {
       display: flex;
       flex-direction: column;
-      max-width: 20rem;
       margin: 0 auto;
-    //   padding-top: 5rem;
 
       @include media('>=tablet') {
         flex-direction: row;
-        max-width: 57rem;
+        max-width: 95%;
       }
       .ebook__image {
         width: 100%;
@@ -78,7 +76,6 @@
         }
 
         p {
-            line-height: 1.4rem;
             color: $blueColor;
         }
       }

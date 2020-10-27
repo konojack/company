@@ -5,7 +5,6 @@ function Price() {
     <div className='price__container' id='price'>
       <div className='price__wrapper'>
         <div className='price__box'>
-          <h3 className='main__one'>Cennik</h3>
           <h2 className='main__two'>Promocja</h2>
         </div>
         <div className='promotion_info'>
@@ -42,13 +41,13 @@ function Price() {
             <p>
               <span>- Interaktywne komponenty wizualne*</span>
             </p>
-            <p>- Darmowe e-book</p>
+            <p>- Darmowy e-book</p>
             <br />
             <p className='maleinfo'>
               * Wyswietlajace sie automatycznie badz na zyczenie male video w
-              roznych miejscach strony. Uzyskujemy w ten sposob mozliwosc
+              roznych miejscach strony i animowane popupy. Uzyskujemy w ten sposob mozliwosc
               czystego zamieszczenia wiekszej ilosci informacji i odgornego
-              budowania zaufania i poznania.{' '}
+              budowania zaufania.
             </p>
           </div>
           {/* 3 */}
@@ -62,7 +61,7 @@ function Price() {
             <p>
               <span>- Interaktywny pomocnik wizualny*</span>
             </p>
-            <p>- Darmowe e-book</p>
+            <p>- Darmowy e-book</p>
             <br />
             <p className='maleinfo'>
               * Wyswietlajace sie automatycznie pomocnik. Dajacy wskazowki i

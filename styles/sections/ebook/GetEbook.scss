@@ -1,7 +1,6 @@
 .getBook__container {
     padding-top: 3rem;
 
-    
       @include media('>=tablet') {
         padding-top: 4rem;
       }
@@ -43,7 +42,7 @@
         }
         button {
           color: #fff;
-          padding: 1rem;
+          padding: .7rem;
           cursor: pointer;
           background: #3d8e1c;
           border-radius: 50rem;

@@ -1,20 +1,7 @@
 .offer__container {
-  // margin-top: 4rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
   position: relative;
-  padding-top: 2rem;
-
-  // @include media('>=phone') {
-  //   margin-top: 6rem;
-  // }
-
-  // @include media('>=tablet') {
-  //   margin-top: 4rem;
-  // }
-
-  // @include media('>=laptop') {
-  //   margin-top: -1rem;
-  // }
+  padding: 2rem 0;
 
   .offer__wrapper {
     display: flex;
@@ -23,10 +10,12 @@
 
     .offer__box {
       text-align: center;
-      padding: 0 1rem;
+
+      @include media('>=tablet') {
+        padding: 0 3rem;
+      }
 
       p {
-        line-height: 1.4rem;
         color: $blueColor;
       }
     }
@@ -35,8 +24,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 1rem;
       margin-top: 2rem;
+
+      @include media('>=tablet') {
+        margin-top: 0rem;
+      }
 
       .offer__element {
         display: flex;
@@ -65,7 +57,7 @@
 
           @include media('>=tablet') {
             margin-right: 2rem;
-            min-width: 10.2rem;
+            min-width: 12vw;
           }
 
           .element__icon {
@@ -99,7 +91,6 @@
           flex-direction: column;
 
           p {
-            line-height: 1.4rem;
             margin-top: 0.5rem;
             color: $blueColor;
 
@@ -156,6 +147,7 @@
             @include media('>=laptop') {
               flex-direction: row;
               padding-top: 0rem;
+              height: 29rem;
             }
           }
         }

@@ -1,23 +1,16 @@
 .team__container {
-  margin-top: 8rem;
-  padding-top: 2rem;
-
-  // @include media('>=phone') {
-  //   margin-top: 6rem;
-  // }
-
-  // @include media('>=tablet') {
-  //   margin-top: 4rem;
-  // }
-
-  // @include media('>=laptop') {
-  //   margin-top: 9rem;
-  // }
+  margin-top: 4rem;
+  padding: 2rem 0;
 
   .team__wrapper {
     .team__box {
       width: 100%;
       text-align: center;
+
+      @include media('>=tablet') {
+        padding: 0 3rem;
+      }
+
     }
     .team__numbers {
       display: flex;
@@ -40,10 +33,6 @@
             font-size: 2rem;
         }
 
-        p {
-          line-height: 1.4rem;
-        }
-
         .team__icon {
           width: 3rem;
           height: auto;
@@ -61,40 +50,33 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 6rem;
+      margin-top: 2rem;
 
       @include media('>=tablet') {
-        flex-direction: row;
-        width: 37rem;
         margin: 3rem auto 0rem auto;
         justify-content: space-between;
         align-items: baseline;
+        flex-direction: row;
+        margin-top: 6rem;
       }
 
       @include media('>=laptop') {
-        width: 90%;
+
       }
 
       .team__person {
         padding: 1rem;
-        width: 18rem;
-
         display: flex;
         flex-direction: column;
 
         @include media('>=laptop') {
-          flex-direction: row;
           width: 100%;
         }
 
         .team__photo {
-          // width: 61%;
           max-width: 12rem;
           max-height: 16rem;
-
-          @include media('>=laptop') {
-            // width: 80%;
-          }
+          align-self: center;
         }
 
         .team__photo-right {
@@ -102,25 +84,14 @@
         }
 
         .team__info {
-          @include media('>=laptop') {
-            padding: 6rem 0 0 1rem;
-          }
-
           h3 {
             margin: 1rem 0;
             color: $blueColorDark;
           }
 
           p {
-            line-height: 1.4rem;
             color: $blueColor;
           }
-        }
-
-        .team__info-right {
-            @include media('>=laptop') {
-                padding: 6rem 1rem 0 0;
-              }
         }
 
         &:nth-child(2) {
@@ -130,12 +101,6 @@
             margin-top: 0rem;
           }
         }
-      }
-
-      .team__person-right {
-        @include media('>=laptop') {
-            flex-direction: row-reverse;
-          }
       }
     }
   }

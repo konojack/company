@@ -7,7 +7,6 @@ function AllSteps() {
     <div className='allSteps__container'>
       <div className='allSteps__wrapper'>
         <div className='allSteps__box'>
-          <h3 className='main__one'>Lista</h3>
           <h2 className='main__two'>Wszystkie kroki</h2>
           <p>Ponizej za i przeciw kazdej opcji</p>
         </div>

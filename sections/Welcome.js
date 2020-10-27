@@ -8,6 +8,7 @@ import {
   Circle2,
   ImageTeacher,
   Checked,
+  Vorld
 } from '../svg/Svg';
 
 function Welcome() {
@@ -17,8 +18,13 @@ function Welcome() {
         <div className='welcome__box welcome__box-left'>
           <div className='welcome__box-left-content'>
             <p className='dobrazmiana'>Dobra zmiana</p>
-            <h1 className='title'>
-              Interaktywne <br /> strony <br /> wizytowkowe
+            <h1 class='title'>
+              Interaktywne
+              <br />
+              wizytowkowki
+              <br /> dla Tlumaczy
+              <br />
+              Jezykow Obycych
             </h1>
             <div className='option'>
               <div className='left__option'>
@@ -28,34 +34,34 @@ function Welcome() {
                 </p>
                 <p>
                   <Checked />
-                  Dynamiczne
+                  Google Moja Firma
                 </p>
                 <p>
                   <Checked />
-                  Interaktywne
+                  15+ sekcji
                 </p>
               </div>
               <div className='right__option'>
                 <p>
                   <Checked />
-                  15+ sekcji
+                  61 krokow
                 </p>
                 <p>
                   <Checked />
-                  61 podjetych krokow
+                  Interaktywne
                 </p>
                 <p>
                   <Checked />
-                  google Moja Firma
+                  Dynamiczne
                 </p>
               </div>
             </div>
-            <p className='e-book buttonBlue'><Link href='/ebook'>Darmowy E-book</Link></p>
+            <p className='e-book buttonBlue'>
+              <Link href='/ebook'>Darmowy E-book</Link>
+            </p>
           </div>
         </div>
-        <div className='welcome__box welcome__box-right'>
-          <ImageTeacher />
-        </div>
+        <Vorld />
       </div>
 
       {/* tlo */}

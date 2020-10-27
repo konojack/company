@@ -38,11 +38,9 @@ function Contact() {
           </form>
           <div className='contact__text'>
             <h2>Zyski zaczynaja sie od kontaktu</h2>
-            <p>Dokladnie omowimy caly plan i</p>
-            <p>ustalimy wszystkie szczegoly.</p>
+            <p>Dokladnie omowimy caly plan i ustalimy wszystkie szczegoly.</p>
             <br />
-            <p>Wspolnie uda nam sie osiagnac cel</p>
-            <p>a Twoja firma pozyska swietna strone.</p>
+            <p>Wspolnie uda nam sie osiagnac cel a Twoja firma pozyska swietna strone.</p>
             <br />
             <p>Nasza cena to tylko 2000zl.</p>
             <br />

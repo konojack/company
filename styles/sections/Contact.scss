@@ -1,19 +1,12 @@
 .contact__container {
-  margin: 5rem 0 7rem 0;
+  margin: 0rem 0 2rem 0;
   position: relative;
-  padding-top: 1rem;
+  padding: 2rem 0;
 
-  // @include media('>=phone') {
-  //   margin-top: 7rem;
-  // }
-
-  // @include media('>=tablet') {
-  //   margin-top: 5rem;
-  // }
-
-  // @include media('>=laptop') {
-  //   margin-top: 5rem;
-  // }
+  @include media('>=tablet') {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+  }
 
   .contact__wrapper {
     display: flex;
@@ -23,7 +16,7 @@
       display: flex;
       flex-direction: column;
       padding: 1rem;
-      max-width: 24rem;
+      max-width: 90vw;
       margin: 0 1rem;
       background: #fcfcfd;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -31,7 +24,7 @@
 
       @include media('>=tablet') {
         flex-direction: row;
-        max-width: 42rem;
+        max-width: 60rem;
       }
 
       form {
@@ -64,7 +57,7 @@
 
         button {
           color: #fff;
-          padding: 1rem;
+          padding: .7rem;
           cursor: pointer;
           background: #3d8e1c;
           border-radius: 50rem;
@@ -94,14 +87,13 @@
         }
 
         p {
-          line-height: 1.4rem;
           color: $blueColor;
         }
 
         h3 {
           margin-top: 1rem;
           font-weight: 400;
-          font-size: 1.8rem;
+          font-size: 1rem;
           color: $blueColorDark;
         }
 

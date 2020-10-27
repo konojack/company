@@ -1,28 +1,24 @@
 .price__container {
-  // margin-top: 4rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
   position: relative;
-  padding-top: 2rem;
-
-  // @include media('>=phone') {
-  //   margin-top: 6rem;
-  // }
-
-  // @include media('>=tablet') {
-  //   margin-top: 4rem;
-  // }
-
-  // @include media('>=laptop') {
-  //   margin-top: 8rem;
-  // }
+  padding: 2rem 0;
 
   .price__wrapper {
     text-align: center;
+
+    .price__box {
+      @include media('>=tablet') {
+        padding: 0 3rem;
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+
     .promotion_info {
-      padding: 2rem 0 3rem 0;
       font-weight: 700;
       background-color: #fff;
-      margin: 4rem 0;
+      margin: 2rem 0;
 
       .raty {
         color: red;
@@ -30,7 +26,11 @@
       }
       .procent {
         margin-top: 0.5rem;
-        font-size: 5rem;
+        font-size: 32px;
+
+        @include media('>=tablet') {
+          font-size: 44px;
+        }
       }
       .no__pay {
         font-weight: 700;
@@ -57,11 +57,12 @@
         padding: 2rem 1rem;
         background: #fbfbff;
         border: 1px solid #e9e9e9;
-        max-width: 16rem;
+        max-width: 19rem;
         margin: 1rem auto;
         border-radius: 0.1rem;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        text-align: left;
 
         &:hover {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -70,10 +71,10 @@
 
         .pakiet__title {
           font-weight: 700;
+          text-align: center;
         }
 
         p {
-          line-height: 1.4rem;
           color: $blueColorDark;
           span {
             color: green;
@@ -83,15 +84,21 @@
         .price {
           font-size: 2rem;
           margin-bottom: 1rem;
+          text-align: center;
+          font-size: 32px;
+
+          @include media('>=tablet') {
+            font-size: 44px;
+          }
         }
 
         .maleinfo {
-          font-size: .7rem;
+          font-size: 0.7rem;
         }
       }
 
       .coming {
-        opacity: .5;
+        opacity: 0.5;
         &:hover {
           box-shadow: none;
         }

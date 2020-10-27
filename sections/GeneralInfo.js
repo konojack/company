@@ -18,15 +18,12 @@ function GeneralInfo() {
     <div className='generalInfo__container'>
       <div className='generalInfo__wrapper'>
         <div className='generalInfo__box'>
-          <h3 className='main__one'>O co chodzi</h3>
           <h2 className='main__two'>MISJA</h2>
           <p>
             Zbadalismy potrzeby, dostosowalismy strukture, przygotowalismy
             element strony tak, by spelnialy wszystkie normy ustalone w{' '}
             <span className='blueDarkColorClass'>2021 </span> roku przez{' '}
             <span className='blueDarkColorClass'>Google</span>.
-            <br />
-            <br />
             Naszym celem jest sprawic by Panstwa firma wskoczyla do <span className='blueDarkColorClass'>TOP</span> najlepszych firm w miescie.
           </p>
         </div>

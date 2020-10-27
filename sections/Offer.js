@@ -16,12 +16,8 @@ function Offer() {
     <div className='offer__container' id='offer'>
       <div className='offer__wrapper'>
         <div className='offer__box'>
-          <h3 className='main__one'>Co oferujemy</h3>
           <h2 className='main__two'>Interaktywne wizytowki</h2>
-          <p>
-            Idealne rozwiazanie dla osob pracujacych w pojedynke badz mniejszych
-            firm.
-          </p>
+          <p>Idealne rozwiazanie dla firm 1-5 osobowych.</p>
         </div>
 
         <div className='offer__elements'>
@@ -42,15 +38,13 @@ function Offer() {
                   <p>3&#41; Sekcja Opis ogolny</p>
                   <p>4&#41; Sekcja Statystyki</p>
                   <p>5&#41; Sekcja Serwis</p>
-                </div>
-                <div>
                   <p>6&#41; Sekcja O Nas</p>
                   <p>7&#41; Sekcja Video</p>
                   <p>8&#41; Sekcja Certyfikaty</p>
-                  <p>9&#41; Sekcja Prezentacja</p>
-                  <p>10&#41; Sekcja Cennik</p>
                 </div>
                 <div>
+                  <p>9&#41; Sekcja Prezentacja</p>
+                  <p>10&#41; Sekcja Cennik</p>
                   <p>11&#41; Sekcja Opinie Klientow</p>
                   <p>12&#41; Sekcja Prezent</p>
                   <p>13&#41; Sekcja Mapa + Kontakt</p>
@@ -129,8 +123,14 @@ function Offer() {
                   100%.
                 </p>
                 <p>Zadbamy o kazda mozliwa pozycje dla Google Moja Firma.</p>
-                <p>Damy Panstwu rady jak dbac o to by strona pozyskiwala pozytywne komentarze i byla wysoko oceniana.</p>
-                <p>&#40; Z prawej strony przyklad tego jak moze wygladac Google Moja Firma &#41; &rarr;</p>
+                <p>
+                  Damy Panstwu rady jak dbac o to by strona pozyskiwala
+                  pozytywne komentarze i byla wysoko oceniana.
+                </p>
+                <p>
+                  &#40; Z prawej strony przyklad tego jak moze wygladac Google
+                  Moja Firma &#41;
+                </p>
               </div>
 
               <div className='googlePage'>
@@ -152,10 +152,12 @@ function Offer() {
               <p>
                 <span>"Content Marketing i Social Media"</span>
                 <p>Przygotowalismy dla Panstwa E-book. </p>
-                Jest to pelen informacji zbior najlepszych zasad dotyczacych tworzenia contentu <br />
-                marketingowego, social media i sposobow na zdobycie wiekszej ilosci klientow.
+                Jest to pelen informacji zbior najlepszych zasad dotyczacych
+                tworzenia contentu <br />
+                marketingowego, social media i sposobow na zdobycie wiekszej
+                ilosci klientow.
               </p>
-              <p style={{color: '#fd2e41'}}>E-book jest w 100% darmowy.</p>
+              <p style={{ color: '#fd2e41' }}>E-book jest w 100% darmowy.</p>
               <p className='buttonGo buttonBlue'>
                 <Link href='/ebook'>Zobacz &rarr;</Link>
               </p>

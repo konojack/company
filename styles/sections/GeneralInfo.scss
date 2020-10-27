@@ -1,30 +1,21 @@
 .generalInfo__container {
-  margin-top: 1rem;
   position: relative;
-  padding-top: 2rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
   background-color: #fff;
-
-  @include media('>=phone') {
-    margin-top: -2rem;
-  }
-
-  @include media('>=tablet') {
-    margin-top: 5rem;
-  }
+  margin-top: 2rem;
 
   .generalInfo__wrapper {
     display: flex;
     justify-content: center;
- 
 
     .generalInfo__box {
-      padding: 1rem;
-      max-width: 30rem;
       text-align: center;
 
+      @include media('>=tablet') {
+        padding: 0 3rem;
+      }
+
       p {
-        line-height: 1.4rem;
         color: $blueColor;
       }
     }

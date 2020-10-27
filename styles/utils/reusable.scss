@@ -1,4 +1,4 @@
-$blueColor: #242424;
+$blueColor: #1e1c24;
 $blueColorDark: #000000;
 $whiteColor: #fff;
 $redColor: #fd2539;
@@ -6,18 +6,20 @@ $redColor: #fd2539;
 // $blueColor: #6159e6;
 // $blueColorDark: #243e64;
 
-.main__one {
-  font-size: 17px;
-  text-transform: uppercase;
-  color: $redColor;
-}
-
 .main__two {
-  font-size: 30px;
+  font-size: 32px;
   text-transform: uppercase;
   line-height: 2.5rem;
   margin-bottom: 1.5rem;
   color: $blueColorDark;
+  text-align: center;
+  
+  
+  @include media('>=tablet') {
+    margin-left: 1rem;
+    font-size: 48px;
+    text-align: left;
+  }
 }
 
 .blueDarkColorClass {
@@ -27,7 +29,7 @@ $redColor: #fd2539;
 
 .buttonBlue {
   color: $blueColor;
-  padding: 1rem;
+  padding: .7rem;
   cursor: pointer;
   background: $blueColor;
   border-radius: 50rem;
@@ -35,6 +37,8 @@ $redColor: #fd2539;
   border: 0.15rem solid transparent;
   transition: 0.2s;
   display: inline-block;
+  font-size: 16px;
+  outline: none;
 
   a {
     color: #fff;
