@@ -6,6 +6,7 @@ footer {
   align-items: center;
   min-height: 10rem;
   border-top: 0.1rem solid #ebedf0;
+  background-color: #fd2e41;
 
   @include media('>=570px') {
     flex-direction: row;
@@ -15,7 +16,7 @@ footer {
   }
 
   p {
-    color: $blueColorDark;
+    color: #fff;
   }
 
   .copy {
@@ -27,10 +28,6 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    p {
-      font-weight: 700;
-    }
 
     @include media('>=570px') {
       align-items: flex-end;

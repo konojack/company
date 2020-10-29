@@ -5,7 +5,7 @@ import React from 'react'
 function Footer() {
     return (
         <footer>
-            <p className='copy'>&copy; 2020 Copyright all right reserved</p>
+            <p className='copy'>&copy; Strony-dla-tlumaczy 2020 All rights reserved.</p>
             <div>
                 <p>+514088872</p>
                 <p>email@email.com</p>

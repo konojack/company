@@ -36,12 +36,12 @@ export default function SEO({ title, description = '' }) {
       {/* <meta name='referrer' content='no-referrer-when-downgrade' /> */}
 
       {/* Cache next-pwa ??? */}
-      <link rel='manifest' href='/manifest.json' />
+      <link rel='manifest' href='./manifest.json' />
       <link rel='shortcut icon' href='./favicon.ico' />
       <link rel='icon' type='image/png' href='./favicon.ico' />
       {/* this sets the color of url bar  */}
       <meta name='theme-color' content='#90cdf4' />
-      <link rel='apple-touch-icon' href='/favicon.ico' />
+      <link rel='apple-touch-icon' href='./favicon.ico' />
       {/* this sets the color of url bar in Apple smatphones   */}
       <meta name='apple-mobile-web-app-status-bar' content='#90cdf4' />
 

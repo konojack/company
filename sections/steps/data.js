@@ -168,21 +168,21 @@ export const media = [
     title: 'Slidery',
     bad: 'Brak slidera.',
     good:
-      'Responsywne i animowane slidery dla zdjec, dzialajce w wybranym kierunku, na klikniecie badz dotyk palca na maniejszych urzadzeniach. Jest to element nieobowiazkowy lecz swietnie sie sprawdza np. przy ukazywaniu ostatnich opinii klientow.',
+      'Responsywne i animowane slidery dla zdjec, dzialajce w wybranym kierunku, na klikniecie badz dotyk palca na maniejszych urzadzeniach. Jest to element nieobowiazkowy lecz swietnie sie sprawdza np. przy ukazywaniu ostatnich opinii klientow. (opcja na zyczenie)',
     svg: '15-slide',
   },
   {
     title: 'Galerie',
     bad: 'Brak slidera.',
     good:
-      'Responsywne i animowane slidery dla zdjec, dzialajce w wybranym kierunku, na klikniecie badz dotyk palca na maniejszych urzadzeniach. Jest to element nieobowiazkowy lecz swietnie sie sprawdza np. przy ukazywaniu ostatnich opinii klientow.',
+      'Responsywne i animowane slidery dla zdjec, dzialajce w wybranym kierunku, na klikniecie badz dotyk palca na maniejszych urzadzeniach. Jest to element nieobowiazkowy lecz swietnie sie sprawdza np. przy ukazywaniu ostatnich opinii klientow. (opcja na zyczenie)',
     svg: '13-gallery',
   },
   {
     title: '360 stopni',
     bad: 'Brak zdjecia 360.',
     good:
-      'Zdjecie 360 stopni lub panoramiczne VR np. miejsca pracy. Tego typu zdjecie jest jak wglad do srodka ksiazki.',
+      'Zdjecie 360 stopni lub panoramiczne VR np. miejsca pracy. Tego typu zdjecie jest jak wglad do srodka ksiazki. (opcja na zyczenie)',
     svg: '7-360',
   },
   {
@@ -196,7 +196,7 @@ export const media = [
     title: 'Video prezentacyjne',
     bad: 'Brak video prezentacji.',
     good:
-      'Z udzialem ludzi, animowane, kolorowe lub na bialej tablicy rysowane, video prezentujace czym zajmuje sie firma. Jest to coraz bardziej popularny sposob na doracie do klienta.',
+      'Z udzialem ludzi, animowane, kolorowe lub na bialej tablicy rysowane, video prezentujace czym zajmuje sie firma. Jest to coraz bardziej popularny sposob na doracie do klienta. (opcja na zyczenie)',
     svg: '8-video',
   },
   {
@@ -204,7 +204,7 @@ export const media = [
     bad:
       'Brak dodatkowych elementow budujacych marke i zwiekszajacych sprzedaz.',
     good:
-      'Cudowne i chwytliwe elementy marketingowe, przygotowane na kazda okazje. Serwis jest dodatkowo platny.',
+      'Cudowne i chwytliwe elementy marketingowe, przygotowane na kazda okazje. Serwis jest dodatkowo platny. (opcja na zyczenie)',
     svg: '12-flyer',
   },
 ];
@@ -268,7 +268,7 @@ export const effects = [
     bad:
       'Brak dostosowanego scrolla. Uzywanie scrolla zapewnionego przez przegladarke. Taki scroll wyglada zle i zajmuje za duzo miejsca.',
     good:
-      'Zmniejszony i dostosowany do stylu strony scroll (widoczny przy prawym koncu okna). Bedzie idalnie plasowal sie w cala kompozycje strony.',
+      'Zmniejszony i dostosowany do stylu strony scroll (widoczny przy prawym koncu okna). Bedzie idalnie plasowal sie w cala kompozycje strony. (opcja na zyczenie)',
     svg: '21-scroll',
   },
   {
@@ -297,14 +297,14 @@ export const effects = [
     title: 'Smart Object',
     bad: 'Brak smart object.',
     good:
-      'Obiekty odpowiednio wystylizowane w Photoshop, bedace idealnym miejscem na mockup lub parallax. Element nieobowiazkow ale dajacy przyjazny efekt. Idelany w przypadku promowania jednej rzeczy np. ksiazki.',
+      'Obiekty odpowiednio wystylizowane w Photoshop, bedace idealnym miejscem na mockup lub parallax. Element nieobowiazkow ale dajacy przyjazny efekt. Idelany w przypadku promowania jednej rzeczy np. ksiazki. (opcja na zyczenie)',
     svg: '6-object',
   },
   {
     title: 'Mockup',
     bad: 'Brak mockup',
     good:
-      'Wasze logo, zdjecie, tresc badz inny element, ktory zechca Panstwo by umiescic na smart object. Np. moze to byc e-book, ktory jest rekomendacja z naszej strony dla sekcji Prezent.',
+      'Wasze logo, zdjecie, tresc badz inny element, ktory zechca Panstwo by umiescic na smart object. Np. moze to byc e-book, ktory jest rekomendacja z naszej strony dla sekcji Prezent. (opcja na zyczenie)',
     svg: '7-mockup',
   },
   {
@@ -326,7 +326,7 @@ export const effects = [
     title: 'Dzwonienie poprzez strone',
     bad: 'Brak mozliwosci dzwonienia przez telefon.',
     good:
-      'Mozliwosc wykonania polaczenia. Podobna mozliwosc daje Google Moja Biznes Strona.',
+      'Mozliwosc wykonania polaczenia. Podobna mozliwosc daje Google Moja Biznes Strona. (opcja na zyczenie)',
     svg: '10.vebcall',
   },
   {
@@ -358,7 +358,7 @@ export const effects = [
     bad:
       'Brak znakow wodnych umozliwy kazdej jednej osobie na pobranie zdjec bez zgody.',
     good:
-      'Male delikatnie widoczne informacje na zdjeciach niepozwalajace nieproszonym osobom na kopiowanie.',
+      'Male delikatnie widoczne informacje na zdjeciach niepozwalajace nieproszonym osobom na kopiowanie. (opcja na zyczenie)',
     svg: '17-vatermark',
   },
   {
@@ -373,21 +373,21 @@ export const effects = [
     title: 'Tryb jasny/ciemny',
     bad: 'Brak mozliwosci dostosowania kolorow do potrzeb lub pory dnia.',
     good:
-      'W zaleznosci jak klient preferuje, mozemy zrobic tryb ciemny badz jasny dla strony, razem z przelacznikiem.',
+      'W zaleznosci jak klient preferuje, mozemy zrobic tryb ciemny badz jasny dla strony, razem z przelacznikiem. (opcja na zyczenie)',
     svg: '16-darklightmode',
   },
   {
     title: 'Pionowy/Poziomy scroll',
     bad: 'Posiadanie tylko scrolla pionowego.',
     good:
-      'Scrollowanie strony moze przebiegac w pionie lub poziomie. Jest to opcjonalny efekt, rozpatrywany w ramach potrzeb.',
+      'Scrollowanie strony moze przebiegac w pionie lub poziomie. Jest to opcjonalny efekt, rozpatrywany w ramach potrzeb. (opcja na zyczenie)',
     svg: '17-scrolldirection',
   },
   {
     title: 'Timeline',
     bad: 'Brak timeline lub podobnej informacji.',
     good:
-      'Tworzmy timeline, ktory idealnie ukazuj Panstwa osiagniecia i przyszle plany. (Element opcjonalny).',
+      'Tworzmy timeline, ktory idealnie ukazuj Panstwa osiagniecia i przyszle plany. (Element opcjonalny). (opcja na zyczenie)',
     svg: '18-timeline',
   },
   {
@@ -402,7 +402,7 @@ export const effects = [
     title: 'Popup-y',
     bad: 'Brak popup-ow.',
     good:
-      'Idealne rozwiazanie dla dodatkowej ilosci informacji. Alternatywa do tworzenia tabow. (Element opcjonany).',
+      'Idealne rozwiazanie dla dodatkowej ilosci informacji. Alternatywa do tworzenia tabow. (Element opcjonany). (opcja na zyczenie)',
     svg: '19-popup',
   },
   {
@@ -430,7 +430,7 @@ export const effects = [
     title: 'Audio',
     bad: 'Brak audio.',
     good:
-      'Brak audio nie jest zly. W przypadku jednak gdy chcemy pobudzic inne zmysly klienta podczas wizyty, warto zadbac o delikatny nastroj.',
+      'Brak audio nie jest zly. W przypadku jednak gdy chcemy pobudzic inne zmysly klienta podczas wizyty, warto zadbac o delikatny nastroj. (opcja na zyczenie)',
     svg: '24-audio',
   },
   {

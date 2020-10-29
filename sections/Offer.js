@@ -10,6 +10,7 @@ import {
   Circle,
   Deal,
 } from '../svg/Svg';
+import Typed from 'react-typed';
 
 function Offer() {
   return (
@@ -28,9 +29,7 @@ function Offer() {
               <h3>14 Sekcji</h3>
             </div>
             <div className='element__right'>
-              <p>
-                <span>Wyselekcjonowane Sekcje</span>{' '}
-              </p>
+              <h3 className='element__title'>Wyselekcjonowane Sekcje</h3>{' '}
               <div className='sekcja__wrapper'>
                 <div>
                   <p>1&#41; Sekcja Powitalna</p>
@@ -66,12 +65,11 @@ function Offer() {
               <h3>60+ Krokow</h3>
             </div>
             <div className='element__right'>
-              <p>
-                <span>
-                  60 krokow podjetych w celu stworzenia profesjonalnej strony
-                  internetowej.
-                </span>
-              </p>
+              <h3 className='element__title'>
+                60 krokow podjetych w celu stworzenia profesjonalnej strony
+                internetowej
+              </h3>
+
               <p>W tym:</p>
               <p>
                 <span># Strona pisana 100% od zera </span> bez uzycia szablonow
@@ -111,9 +109,8 @@ function Offer() {
             </div>
             <div className='element__right element__right-withPhoto'>
               <div className='googlePageText'>
-                <p>
-                  <span>Google My Business Page</span>
-                </p>
+                <h3 className='element__title'>Google My Business Page</h3>
+
                 <p>
                   Bardzo wazna czesc informacyjna o firmie, widoczna po prawej
                   stronie ekranu, po wyszukaniu w Google.
@@ -146,19 +143,25 @@ function Offer() {
           <div className='offer__element'>
             <div className='element__left red'>
               <Free />
-              <h3>Darmowy e-book</h3>
+              <h3 className='element__title'>
+                Darmowy <br /> e-book
+              </h3>
             </div>
             <div className='element__right'>
-              <p>
-                <span>"Content Marketing i Social Media"</span>
+              <div>
+                <Typed
+                  strings={['Content Marketing i Social Media']}
+                  typeSpeed={50}
+                  loop
+                />
                 <p>Przygotowalismy dla Panstwa E-book. </p>
-                Jest to pelen informacji zbior najlepszych zasad dotyczacych
-                tworzenia contentu <br />
-                marketingowego, social media i sposobow na zdobycie wiekszej
-                ilosci klientow.
-              </p>
+                <p>Jest to pelen informacji zbior najlepszych zasad dotyczacych
+                tworzenia contentu</p>
+                <p>marketingowego, social media i sposobow na zdobycie wiekszej
+                ilosci klientow.</p>
+              </div>
               <p style={{ color: '#fd2e41' }}>E-book jest w 100% darmowy.</p>
-              <p className='buttonGo buttonBlue'>
+              <p className='buttonGo buttonRed'>
                 <Link href='/ebook'>Zobacz &rarr;</Link>
               </p>
             </div>

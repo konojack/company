@@ -1,10 +1,11 @@
 import React, { Component, useState, useEffect, useRef } from 'react';
 import { Player, ControlBar } from 'video-react';
-import { Left } from '../svg/Svg';
+import { Trojkat, Bad } from '../svg/Svg';
 
 function Video() {
   const [open, setOpen] = useState(false);
   const [mouse, setMouse] = useState(false);
+  const [playMeInCase, setPlayMeInCase] = useState(true);
 
   const videoRef = useRef(null);
   const toggleRef = useRef(null);
@@ -13,7 +14,10 @@ function Video() {
 
   useEffect(() => {
     setTimeout(() => {
+      if (localStorage.getItem('initialOpen') === 'true') return;
+
       setOpen(true);
+      localStorage.setItem('initialOpen', 'true');
     }, 1000);
   }, []);
 
@@ -25,6 +29,7 @@ function Video() {
   const togglePlay = () => {
     const method = videoRef.current.paused ? 'play' : 'pause';
     videoRef.current[method]();
+    setPlayMeInCase(false);
   };
 
   const updateButton = () => {
@@ -45,21 +50,27 @@ function Video() {
   };
 
   const hideOrOpen = () => {
+    setPlayMeInCase(true)
     setOpen(!open);
     videoRef.current.pause();
   };
 
   return (
     <>
-      <R />
+      {/* <R /> */}
       <div className={`interactive ${open ? 'open' : ''}`}>
         <span className='toggleVideo' onClick={() => hideOrOpen()}>
-          <Left />
+          {open ? <Bad /> : <Trojkat />}
         </span>
 
         <div className='player'>
+          {playMeInCase && (
+            <p className='playme__inCase' onClick={() => togglePlay()}>
+              Play me <Trojkat />
+            </p>
+          )}
           <video
-            class='player__video viewer'
+            className='player__video viewer'
             src='./video2.mp4'
             onClick={() => togglePlay()}
             onPlay={() => updateButton()}
@@ -68,19 +79,17 @@ function Video() {
             ref={videoRef}
           ></video>
 
-          <div class='player__controls'>
+          <div className='player__controls'>
             <div
-              class='progress'
-              // onClick={(e) => scrub(e)}
-              // onMouseMove={(e) => mouse && scrub(e)}
+              className='progress'
               onMouseDown={() => setMouse(true)}
               onMouseUp={() => setMouse(false)}
               ref={progressRef}
             >
-              <div class='progress__filled' ref={progressBarRef}></div>
+              <div className='progress__filled' ref={progressBarRef}></div>
             </div>
             <button
-              class='player__button toggle'
+              className='player__button toggle'
               title='Toggle Play'
               onClick={() => togglePlay()}
               ref={toggleRef}
@@ -100,7 +109,10 @@ export default Video;
 
 // 2. NORMALNY HTML INBUILT TEZ DZIALA - ale mniej ladny
 const R = () => (
-  <div class='interactive open' style={{background: 'black', bottom: '15rem'}}>
+  <div
+    class='interactive open'
+    style={{ background: 'black', bottom: '15rem' }}
+  >
     <span class='toggleVideo'></span>
     <div>
       <video width='322' height='182' controls>

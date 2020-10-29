@@ -54,6 +54,33 @@ $redColor: #fd2539;
   }
 }
 
+.buttonRed {
+  color: $blueColor;
+  padding: .7rem;
+  cursor: pointer;
+  background: #fd2e41;
+  border-radius: 50rem;
+  color: $whiteColor;
+  border: 0.15rem solid transparent;
+  transition: 0.2s;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+
+  a {
+    color: #fff;
+  }
+
+  &:hover {
+    background: $whiteColor;
+    border: 0.15rem solid #fd2e41;
+  }
+
+  &:hover a {
+    color: #fd2e41;
+  }
+}
+
 @keyframes animationFramesTwo {
   0% {
     transform: translate(0px, 0px) rotate(0deg) scale(1);

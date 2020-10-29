@@ -91,13 +91,17 @@
           flex-direction: column;
 
           p {
-            margin-top: 0.5rem;
             color: $blueColor;
 
             span {
               font-weight: 700;
-              color: $blueColorDark;
+              color: #fd2e41;
             }
+          }
+
+          h3 {
+            padding-bottom: 0.5rem;
+            font-size: 30px;
           }
 
           .sekcja__wrapper {
@@ -105,7 +109,7 @@
             flex-direction: column;
             @include media('>=tablet') {
               flex-direction: row;
-              
+
               div:not(:nth-child(1)) {
                 padding-left: 2rem;
               }
@@ -140,7 +144,7 @@
             position: relative;
             padding-top: 2rem;
 
-            img { 
+            img {
               width: 100%;
             }
 

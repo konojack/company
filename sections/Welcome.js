@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import {
   Circle,
@@ -10,6 +10,7 @@ import {
   Checked,
   Vorld
 } from '../svg/Svg';
+import Typed from 'react-typed';
 
 function Welcome() {
   return (
@@ -18,13 +19,18 @@ function Welcome() {
         <div className='welcome__box welcome__box-left'>
           <div className='welcome__box-left-content'>
             <p className='dobrazmiana'>Dobra zmiana</p>
-            <h1 class='title'>
+            <h1 className='title'>
               Interaktywne
               <br />
               wizytowkowki
               <br /> dla Tlumaczy
               <br />
-              Jezykow Obycych
+              <Typed
+                    strings={['Jezykow Obycych']}
+                    typeSpeed={150}
+                    backSpeed={100}
+                    loop 
+                />
             </h1>
             <div className='option'>
               <div className='left__option'>
@@ -38,7 +44,7 @@ function Welcome() {
                 </p>
                 <p>
                   <Checked />
-                  15+ sekcji
+                  14+ sekcji
                 </p>
               </div>
               <div className='right__option'>
@@ -70,7 +76,7 @@ function Welcome() {
       <div className='welcome__elementy'>
         <Circle />
         <Domek />
-        <Harmonia />
+        {/* <Harmonia /> */}
         <Krezka />
         <Circle2 />
       </div>

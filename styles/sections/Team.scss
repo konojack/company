@@ -10,7 +10,6 @@
       @include media('>=tablet') {
         padding: 0 3rem;
       }
-
     }
     .team__numbers {
       display: flex;
@@ -29,8 +28,8 @@
         text-align: center;
         margin-top: 2rem;
 
-        p:nth-child(1){
-            font-size: 2rem;
+        p:nth-child(1) {
+          font-size: 2rem;
         }
 
         .team__icon {
@@ -61,7 +60,6 @@
       }
 
       @include media('>=laptop') {
-
       }
 
       .team__person {
@@ -80,13 +78,14 @@
         }
 
         .team__photo-right {
-            transform: rotateY(180deg);
+          transform: rotateY(180deg);
         }
 
         .team__info {
           h3 {
             margin: 1rem 0;
             color: $blueColorDark;
+            position: relative;
           }
 
           p {

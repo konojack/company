@@ -16,7 +16,7 @@ function AllSteps() {
         <div className='step__container'>
           {/* Info */}
           <div className='step__wrapper'>
-            <p className='step__title'>Ogolne</p>
+            <p className='step__title'>Podstawa</p>
             <div className='step'>
               {general.map((el, i) => {
                 return (
@@ -46,143 +46,168 @@ function AllSteps() {
           {/* End of Info */}
 
           {/* SEO */}
-          <div className='step'>
-            <p>SEO</p>
-            {seo.map((el, i) => {
-              return (
-                <div className='steps_box' key={i}>
-                  <span>{i + 12}#</span>
-                  <div className='box_title'>
-                    <h3>{el.title}</h3>
-                    <img src={`./svg/${el.svg}.svg`} alt={`photo_${i + 12}`} />
+          <div className='step__wrapper'>
+            <p className='step__title'>SEO</p>
+            <div className='step'>
+              {seo.map((el, i) => {
+                return (
+                  <div className='steps_box' key={i}>
+                    <span>{i + 12}#</span>
+                    <div className='box_title'>
+                      <h3>{el.title}</h3>
+                      <img
+                        src={`./svg/${el.svg}.svg`}
+                        alt={`photo_${i + 12}`}
+                      />
+                    </div>
+                    <p>
+                      <span>
+                        <Bad />
+                      </span>
+                      {el.bad}
+                    </p>
+                    <p>
+                      <span>
+                        <Good /> Nasz serwis -{' '}
+                      </span>
+                      {el.good}
+                    </p>
                   </div>
-                  <p>
-                    <span>
-                      <Bad />
-                    </span>
-                    {el.bad}
-                  </p>
-                  <p>
-                    <span>
-                      <Good /> Nasz serwis -{' '}
-                    </span>
-                    {el.good}
-                  </p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
           {/* media */}
-          <div className='step'>
-            <p>Media</p>
-            {media.map((el, i) => {
-              return (
-                <div className='steps_box' key={i}>
-                  <span>{i + 21}#</span>
-                  <div className='box_title'>
-                    <h3>{el.title}</h3>
-                    <img src={`./svg/${el.svg}.svg`} alt={`photo_${i + 21}`} />
+          <div className='step__wrapper'>
+            <p className='step__title'>Media</p>
+            <div className='step'>
+              {media.map((el, i) => {
+                return (
+                  <div className='steps_box' key={i}>
+                    <span>{i + 21}#</span>
+                    <div className='box_title'>
+                      <h3>{el.title}</h3>
+                      <img
+                        src={`./svg/${el.svg}.svg`}
+                        alt={`photo_${i + 21}`}
+                      />
+                    </div>
+                    <p>
+                      <span>
+                        <Bad />
+                      </span>
+                      {el.bad}
+                    </p>
+                    <p>
+                      <span>
+                        <Good /> Nasz serwis -{' '}
+                      </span>
+                      {el.good}
+                    </p>
                   </div>
-                  <p>
-                    <span>
-                      <Bad />
-                    </span>
-                    {el.bad}
-                  </p>
-                  <p>
-                    <span>
-                      <Good /> Nasz serwis -{' '}
-                    </span>
-                    {el.good}
-                  </p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
           {/* special */}
-          <div className='step'>
-            <p>Specjaly</p>
-            {special.map((el, i) => {
-              return (
-                <div className='steps_box' key={i}>
-                  <span>{i + 28}#</span>
-                  <div className='box_title'>
-                    <h3>{el.title}</h3>
-                    <img src={`./svg/${el.svg}.svg`} alt={`photo_${i + 28}`} />
+          <div className='step__wrapper'>
+            <p className='step__title'>Specjaly</p>
+            <div className='step'>
+              {special.map((el, i) => {
+                return (
+                  <div className='steps_box' key={i}>
+                    <span>{i + 28}#</span>
+                    <div className='box_title'>
+                      <h3>{el.title}</h3>
+                      <img
+                        src={`./svg/${el.svg}.svg`}
+                        alt={`photo_${i + 28}`}
+                      />
+                    </div>
+                    <p>
+                      <span>
+                        <Bad />
+                      </span>
+                      {el.bad}
+                    </p>
+                    <p>
+                      <span>
+                        <Good /> Nasz serwis -{' '}
+                      </span>
+                      {el.good}
+                    </p>
                   </div>
-                  <p>
-                    <span>
-                      <Bad />
-                    </span>
-                    {el.bad}
-                  </p>
-                  <p>
-                    <span>
-                      <Good /> Nasz serwis -{' '}
-                    </span>
-                    {el.good}
-                  </p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
           {/* effects */}
-          <div className='step'>
-            <p>Efekty</p>
-            {effects.map((el, i) => {
-              return (
-                <div className='steps_box' key={i}>
-                  <span>{i + 34}#</span>
-                  <div className='box_title'>
-                    <h3>{el.title}</h3>
-                    <img src={`./svg/${el.svg}.svg`} alt={`photo_${i + 34}`} />
+          <div className='step__wrapper'>
+            <p className='step__title'>Efekty</p>
+            <div className='step'>
+              {effects.map((el, i) => {
+                return (
+                  <div className='steps_box' key={i}>
+                    <span>{i + 34}#</span>
+                    <div className='box_title'>
+                      <h3>{el.title}</h3>
+                      <img
+                        src={`./svg/${el.svg}.svg`}
+                        alt={`photo_${i + 34}`}
+                      />
+                    </div>
+                    <p>
+                      <span>
+                        <Bad />
+                      </span>
+                      {el.bad}
+                    </p>
+                    <p>
+                      <span>
+                        <Good /> Nasz serwis -{' '}
+                      </span>
+                      {el.good}
+                    </p>
                   </div>
-                  <p>
-                    <span>
-                      <Bad />
-                    </span>
-                    {el.bad}
-                  </p>
-                  <p>
-                    <span>
-                      <Good /> Nasz serwis -{' '}
-                    </span>
-                    {el.good}
-                  </p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
           {/* recommendation */}
-          <div className='step'>
-            <p>Nasza Rekomendacja</p>
-            {recommendation.map((el, i) => {
-              return (
-                <div className='steps_box' key={i}>
-                  <span>{i + 59}#</span>
-                  <div className='box_title'>
-                    <h3>{el.title}</h3>
-                    <img src={`./svg/${el.svg}.svg`} alt={`photo_${i + 59}`} />
+          <div className='step__wrapper'>
+            <p className='step__title'>Nasza Rekomendacja</p>
+            <div className='step'>
+              {recommendation.map((el, i) => {
+                return (
+                  <div className='steps_box' key={i}>
+                    <span>{i + 59}#</span>
+                    <div className='box_title'>
+                      <h3>{el.title}</h3>
+                      <img
+                        src={`./svg/${el.svg}.svg`}
+                        alt={`photo_${i + 59}`}
+                      />
+                    </div>
+                    <p>
+                      <span>
+                        <Bad />
+                      </span>
+                      {el.bad}
+                    </p>
+                    <p>
+                      <span>
+                        <Good /> Nasz serwis -{' '}
+                      </span>
+                      {el.good}
+                    </p>
                   </div>
-                  <p>
-                    <span>
-                      <Bad />
-                    </span>
-                    {el.bad}
-                  </p>
-                  <p>
-                    <span>
-                      <Good /> Nasz serwis -{' '}
-                    </span>
-                    {el.good}
-                  </p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

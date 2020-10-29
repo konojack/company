@@ -49,6 +49,7 @@
 
       @include media('>=tablet') {
         flex-direction: row;
+        padding: 0 1rem;
       }
       .structureInfo__image {
         width: 100%;

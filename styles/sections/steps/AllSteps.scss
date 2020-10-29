@@ -18,7 +18,11 @@
     padding-top: 6rem;
     .step__container {
       .step__wrapper {
-        p {
+        .step__title {
+          background: #fd2e41;
+          padding: 1rem;
+          color: #fff;
+          font-size: 2rem;
           text-align: center;
         }
       }

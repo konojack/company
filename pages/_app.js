@@ -48,6 +48,11 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
   // Google analytics end
 
+  useEffect(() => {
+    localStorage.removeItem('initialOpen')
+    localStorage.removeItem('popup')
+  }, [])
+
   if (router.pathname === '/404') {
     return <NoPage />;
   } else {
