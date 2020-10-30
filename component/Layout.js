@@ -25,7 +25,7 @@ function Layout({ children }) {
   useEffect(() => {
     setTimeout(() => {
       setPopActiveDiv(true);
-    }, 5000);
+    }, 8000);
   }, []);
 
   const popupEvent = () => {
