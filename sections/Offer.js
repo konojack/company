@@ -177,6 +177,7 @@ function Offer() {
                     fontSize: '1.6rem',
                     fontWeight: '700',
                     color: '#fd2539',
+                    textAlign: 'center'
                   }}
                 >
                   My uzyjemy go w 100%.
