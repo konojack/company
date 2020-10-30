@@ -10,6 +10,8 @@
 
     .offer__box {
       text-align: center;
+      display: flex;
+      flex-direction: column;
 
       @include media('>=tablet') {
         padding: 0 3rem;
@@ -89,6 +91,21 @@
         .element__right {
           display: flex;
           flex-direction: column;
+          padding-top: 1.2rem;
+
+          @include media('>=tablet') {
+            padding-top: 0rem;
+          }
+
+          div {
+            span {
+              span {
+                font-weight: 700;
+                color: #fd2e41;
+                font-size: 30px;
+              }
+            }
+          }
 
           p {
             color: $blueColor;
@@ -119,13 +136,10 @@
           .buttonGo {
             align-self: start;
             color: #fff;
+            margin-top: 1rem;
 
             &:hover {
               color: $blueColor;
-            }
-
-            @include media('>=tablet') {
-              margin-top: 1rem;
             }
           }
 

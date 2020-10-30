@@ -1,5 +1,18 @@
 .structureInfo__container {
   position: relative;
+  .logo {
+    position: absolute;
+    left: 5vw;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 8;
+    img {
+      width: 3.5rem;
+    }
+  }
+
   .structureInfo__wrapper {
     .structureInfo__box {
       text-align: center;
@@ -38,6 +51,7 @@
         svg {
           height: 2rem;
           width: 10rem;
+          animation: gogo 1.5s infinite;
         }
       }
     }

@@ -13,8 +13,10 @@ $redColor: #fd2539;
   margin-bottom: 1.5rem;
   color: $blueColorDark;
   text-align: center;
-  
-  
+  position: relative;
+  overflow: hidden;
+  align-self: flex-start;
+
   @include media('>=tablet') {
     margin-left: 1rem;
     font-size: 48px;
@@ -29,7 +31,7 @@ $redColor: #fd2539;
 
 .buttonBlue {
   color: $blueColor;
-  padding: .7rem;
+  // padding: .7rem;
   cursor: pointer;
   background: $blueColor;
   border-radius: 50rem;
@@ -42,6 +44,11 @@ $redColor: #fd2539;
 
   a {
     color: #fff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0.7rem;
+    border-radius: 50rem;
   }
 
   &:hover {
@@ -56,7 +63,7 @@ $redColor: #fd2539;
 
 .buttonRed {
   color: $blueColor;
-  padding: .7rem;
+  // padding: .7rem;
   cursor: pointer;
   background: #fd2e41;
   border-radius: 50rem;
@@ -69,6 +76,11 @@ $redColor: #fd2539;
 
   a {
     color: #fff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0.7rem;
+    border-radius: 50rem;
   }
 
   &:hover {
@@ -79,6 +91,16 @@ $redColor: #fd2539;
   &:hover a {
     color: #fd2e41;
   }
+}
+
+.mark__black {
+  background-color: #000;
+  height: 100%;
+  width: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // transition: .2s;
 }
 
 @keyframes animationFramesTwo {
@@ -131,6 +153,18 @@ $redColor: #fd2539;
   }
   100% {
     -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes gogo {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 17%, 0);
+  }
+  100% {
     transform: translate3d(0, 0, 0);
   }
 }

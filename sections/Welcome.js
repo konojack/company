@@ -8,13 +8,18 @@ import {
   Circle2,
   ImageTeacher,
   Checked,
-  Vorld
+  Vorld,
 } from '../svg/Svg';
 import Typed from 'react-typed';
 
 function Welcome() {
   return (
     <div className='welcome__container'>
+      <div className='logo'>
+        <Link href='/'>
+          <img src='./logo.png' alt='logo' />
+        </Link>
+      </div>
       <div className='welcome__wrapper'>
         <div className='welcome__box welcome__box-left'>
           <div className='welcome__box-left-content'>
@@ -26,11 +31,11 @@ function Welcome() {
               <br /> dla Tlumaczy
               <br />
               <Typed
-                    strings={['Jezykow Obycych']}
-                    typeSpeed={150}
-                    backSpeed={100}
-                    loop 
-                />
+                strings={['Jezykow Obycych']}
+                typeSpeed={150}
+                backSpeed={100}
+                loop
+              />
             </h1>
             <div className='option'>
               <div className='left__option'>
@@ -62,8 +67,10 @@ function Welcome() {
                 </p>
               </div>
             </div>
-            <p className='e-book buttonBlue'>
-              <Link href='/ebook'>Darmowy E-book</Link>
+            <p className='e-book buttonRed'>
+              <Link href='/ebook' class='e-book buttonBlue'>
+                Darmowy E-book
+              </Link>
             </p>
           </div>
         </div>

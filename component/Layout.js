@@ -7,10 +7,17 @@ import { Player } from 'video-react';
 import Video from '../component/Video';
 import Popup from '../component/Popup';
 
+import NewContextProvider from '../context/index';
+
 function Layout({ children }) {
   // const [showVideo, setShowVideo] = useState(false);
   // const [playVideo, setPlayVideo] = useState(false);
   // const videoPlayer = useRef(null);
+
+  const [w, ww] = useState(0);
+  useEffect(() => {
+    ww(window.innerWidth);
+  }, []);
 
   const [pop, setPop] = useState(false);
   const [popActiveDiv, setPopActiveDiv] = useState(false);
@@ -25,18 +32,19 @@ function Layout({ children }) {
     if (localStorage.getItem('popup') === 'true') {
       return;
     } else {
-      document.documentElement.style.overflowY = 'hidden';
+      // document.documentElement.style.overflowY = 'hidden';
       setPop(true);
     }
   };
 
   return (
-    <div className='layout__container'>
-      {/* <Grid /> */}
-      {/* <Intro /> */}
-      <div className='bg-fixed'></div>
+    <NewContextProvider>
+      <div className='layout__container'>
+        {/* <Grid /> */}
+        <Intro />
+        <div className='bg-fixed'></div>
 
-      {/* <div className={`interactive ${showVideo ? 'open' : ''}`}>
+        {/* <div className={`interactive ${showVideo ? 'open' : ''}`}>
         <span className='closeVideo'></span>
         <Player
           poster='./teacher.png'
@@ -50,27 +58,30 @@ function Layout({ children }) {
         </Player>
       </div> */}
 
-      {children.key === '/' && <Video />}
+        {/* VIDEO */}
+        {children.key === '/' && <Video />}
 
-      {pop && <Popup setPop={setPop} />}
+        {/* POPUP */}
+        {pop && <Popup setPop={setPop} />}
 
-      {/* empty div for mouse out popup */}
-      {popActiveDiv && (
-        <div
-          style={{
-            height: '1.5rem',
-            width: '12rem',
-            position: 'fixed',
-            zIndex: '10',
-          }}
-          onMouseOver={() => popupEvent()}
-        ></div>
-      )}
+        {/* empty div for mouseover popup */}
+        {popActiveDiv && w > 765 && (
+          <div
+            style={{
+              height: '1.5rem',
+              width: '12rem',
+              position: 'fixed',
+              zIndex: '10',
+            }}
+            onMouseOver={() => popupEvent()}
+          ></div>
+        )}
 
-      <Navbar />
-      <div className='layout__wrapper'>{children}</div>
-      <Footer />
-    </div>
+        <Navbar />
+        <div className='layout__wrapper'>{children}</div>
+        <Footer />
+      </div>
+    </NewContextProvider>
   );
 }
 

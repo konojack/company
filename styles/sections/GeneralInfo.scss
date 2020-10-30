@@ -10,6 +10,8 @@
 
     .generalInfo__box {
       text-align: center;
+      display: flex;
+      flex-direction: column;
 
       @include media('>=tablet') {
         padding: 0 3rem;

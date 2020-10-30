@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   WelcomeStructure,
   LogoStructure,
@@ -16,13 +16,49 @@ import {
   MenuStructure,
 } from '../../svg/Svg';
 import { data } from './data';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function AllStructure() {
+  useEffect(() => {
+    ScrollTrigger.batch('.str-main__two .mark__black', {
+      start: 'top +645px',
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          scrollTrigger: {
+            trigger: '.str-main__two .mark__black',
+          },
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+        }),
+      onLeave: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+        }),
+      onEnterBack: (batch) =>
+        gsap.to(batch, {
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+        }),
+      onLeaveBack: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+        }),
+    });
+  }, []);
+
   return (
     <div className='allStructure__container'>
       <div className='allStructure__wrapper'>
         <div className='allStructure__box'>
-          <h2 className='main__two'>Wszystkie selekcje</h2>
+          <h2 className='main__two str-main__two'><span className='mark__black'></span>Wszystkie selekcje</h2>
           <p>Ponizej obowiazkowe i opcjonalne sekcje</p>
         </div>
 

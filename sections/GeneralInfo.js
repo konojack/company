@@ -1,30 +1,109 @@
 import React, { useState, useEffect } from 'react';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+const timeline = gsap.timeline();
 
 function GeneralInfo() {
-  const [w, ww] = useState(0);
-  const [playMe, setPlayMe] = useState(false);
+  // const [w, ww] = useState(0);
+  // const [playMe, setPlayMe] = useState(false);
 
-  useEffect(() => {
-    ww(window.innerWidth);
-  }, []);
+  // useEffect(() => {
+  //   ww(window.innerWidth);
+  // }, []);
 
   // const playVideo = () => {
   //   setPlayMe(true)
   //   document.querySelector('.button__container').style.display = 'none'
   //   }
 
+  useEffect(() => {
+    // ScrollTrigger.matchMedia({
+    //   '(min-width: 765px)': function () {
+    // gsap.to('.g-main__two .mark__black', {
+    //   scrollTrigger: {
+    //     trigger: '.g-main__two .mark__black',
+    //     markers: true,
+    //     start: 'top +650px',
+    //   },
+    //   x: '-100%',
+    //   duration: 0.2,
+    // });
+    //   },
+    // });
+
+     ScrollTrigger.batch('.g-main__two .mark__black', {
+      start: 'top +645px',
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          scrollTrigger: {
+            trigger: '.g-main__two .mark__black',
+          },
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut'
+        }),
+      onLeave: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut'
+        }),
+      onEnterBack: (batch) =>
+        gsap.to(batch, {
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut'
+        }),
+      onLeaveBack: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut'
+        }),
+    });
+  }, []);
+
   return (
     <div className='generalInfo__container'>
       <div className='generalInfo__wrapper'>
         <div className='generalInfo__box'>
-          <h2 className='main__two'>MISJA</h2>
+          <h2 className='main__two g-main__two'>
+            <span className='mark__black'></span>PROBLEM JAKI ROZWIAZUJEMY
+          </h2>
           <p>
-            Zbadalismy potrzeby, dostosowalismy strukture, przygotowalismy
-            element strony tak, by spelnialy wszystkie normy ustalone w{' '}
-            <span className='blueDarkColorClass'>2021 </span> roku przez{' '}
-            <span className='blueDarkColorClass'>Google</span>.
-            Naszym celem jest sprawic by Panstwa firma wskoczyla do <span className='blueDarkColorClass'>TOP</span> najlepszych firm w miescie.
+            Dzieki 3 letniej obserwacji poprawnego budowania stron, a takze tego
+            jak nie powinny byc one twrzone,{' '}
+            <span style={{ fontWeight: '700' }}>udalo</span> nam sie stworzyc
+            idealne rozwiazanie na Panstwa potrzeby.
+          </p>
+          <p>
+            Struktura strony internetowej, ktora nazwalismy{' '}
+            <span style={{ fontWeight: '700', color: '#fd2539' }}>
+              Wirtualna Wizytowka
+            </span>
+            , zostala dostosowana do wymogow{' '}
+            <span style={{ fontWeight: '700' }}>Google z roku 2020</span> a
+            takze zmodyfikowana tak, by spelniala wszystkie niezbedne elementy,
+            o ktorych moge Panstwo sie dowiedziec{' '}
+            <a href='#offer' style={{ textDecoration: 'underline' }}>
+              ponizej
+            </a>
+            .
+          </p>
+          <br />
+          <p>
+            Naszym celem jest sprawic by{' '}
+            <span style={{ fontWeight: '700' }}>Panstwa firma</span> wskoczyla
+            do
+            <span style={{ fontWeight: '700' }}> TOP</span> najlepszych firm w
+            miescie.
           </p>
         </div>
       </div>

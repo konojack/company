@@ -19,7 +19,7 @@ function Popup({ setPop }) {
 
     // after action
     setEmailEbook('')
-    document.documentElement.style.overflowY = 'auto';
+    // document.documentElement.style.overflowY = 'auto';
     setPop(false);
     localStorage.setItem('popup', 'true');
   };

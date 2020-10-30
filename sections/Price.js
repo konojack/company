@@ -1,17 +1,68 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Checked } from '../svg/Svg';
+import Typed from 'react-typed';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function Price() {
+  useEffect(() => {
+    ScrollTrigger.batch('.p-main__two .mark__black', {
+      start: 'top +645px',
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          scrollTrigger: {
+            trigger: '.p-main__two .mark__black',
+          },
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onLeave: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onEnterBack: (batch) =>
+        gsap.to(batch, {
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onLeaveBack: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+    });
+  }, []);
+
   return (
     <div className='price__container' id='price'>
       <div className='price__wrapper'>
         <div className='price__box'>
-          <h2 className='main__two'>Promocja</h2>
+          <h2 className='main__two p-main__two'>
+            <span className='mark__black'></span>Promocja
+          </h2>
         </div>
         <div className='promotion_info'>
           <p className='raty'>Elastyczne raty</p>
           <div className='procent'>
-            <p>0%</p>
+            <p>
+              {' '}
+              <Typed
+                strings={['0%']}
+                typeSpeed={80}
+                backSpeed={80}
+                loop
+              />
+            </p>
           </div>
           <p className='no__pay'>Na poczatku nie placisz nic!</p>
           <p className='last__msg'>Pierwsza rata po 3 miesiacach od zakupu</p>
@@ -26,7 +77,7 @@ function Price() {
               <Checked /> Struktura 14 sekcji
             </p>
             <p>
-              <Checked /> 60 Krokow
+              <Checked /> 61 Krokow
             </p>
             <p>
               <Checked /> Google Moja Firma
@@ -47,10 +98,10 @@ function Price() {
             <p className='pakiet__title'>Pakiet interaktywny</p>
             <h3 className='price'>2500 PLN</h3>
             <p>
-              <Checked /> Struktura 14 sekcji
+              <Checked /> Struktura 14+ sekcji
             </p>
             <p>
-              <Checked /> 60 Krokow
+              <Checked /> 61 Krokow
             </p>
             <p>
               <Checked /> Google Moja Firma
@@ -76,10 +127,10 @@ function Price() {
             <p className='pakiet__title'>Pakiet PRO</p>
             <h3 className='price'>Coming soon #2021</h3>
             <p>
-              <Checked /> Struktura 14 sekcji
+              <Checked /> Struktura 14+ sekcji
             </p>
             <p>
-              <Checked /> 60 Krokow
+              <Checked /> 61 Krokow
             </p>
             <p>
               <Checked /> Google Moja Firma

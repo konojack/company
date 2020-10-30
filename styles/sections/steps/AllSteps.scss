@@ -6,8 +6,11 @@
   }
 
   .allSteps__wrapper {
+
     .allSteps__box {
       text-align: center;
+      display: flex;
+      flex-direction: column;
 
       @include media('>=tablet') {
         padding: 0 3rem;
@@ -39,7 +42,7 @@
           position: relative;
           background: #404040;
           margin: 1.7rem 0.8rem;
-          padding: 0.5rem;
+          padding: 1rem;
           background: #fbfbff;
           border: 1px solid #e9e9e9;
           border-radius: 0.2rem;
@@ -51,14 +54,21 @@
               0 10px 10px rgba(0, 0, 0, 0.22);
           }
 
+          p:nth-child(3) span svg {
+            min-width: 1.5rem;
+          }
+
           p {
             padding-top: 1rem;
+            font-size: 19px !important;
+            line-height: 1.3rem !important;
 
             span {
               svg {
-                height: 1.3rem;
+                height: 1rem;
                 vertical-align: bottom;
                 padding-right: 0.3rem;
+                transform: translate(0px, -3px);
               }
             }
           }

@@ -6,42 +6,52 @@
     .team__box {
       width: 100%;
       text-align: center;
+      display: flex;
+      flex-direction: column;
 
       @include media('>=tablet') {
         padding: 0 3rem;
       }
     }
-    .team__numbers {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    // .team__numbers {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
 
-      @include media('>=phone') {
-        flex-direction: row;
-        width: 21rem;
-        margin: 0 auto;
-        justify-content: space-between;
-      }
+    //   @include media('>=phone') {
+    //     flex-direction: row;
+    //     width: 21rem;
+    //     margin: 0 auto;
+    //     justify-content: space-between;
+    //   }
 
-      .team_number {
-        color: $blueColor;
-        text-align: center;
-        margin-top: 2rem;
+    //   .team_number {
+    //     color: $blueColor;
+    //     text-align: center;
+    //     margin-top: 2rem;
 
-        p:nth-child(1) {
-          font-size: 2rem;
-        }
+    //     p:nth-child(1) {
+    //       font-size: 2rem;
+    //     }
 
-        .team__icon {
-          width: 3rem;
-          height: auto;
-          margin-bottom: 0.7rem;
+    //     .team__icon {
+    //       width: 3rem;
+    //       height: auto;
+    //       margin-bottom: 0.7rem;
 
-          @include media('>=tablet') {
-            width: 4rem;
-            margin-bottom: 1rem;
-          }
-        }
+    //       @include media('>=tablet') {
+    //         width: 4rem;
+    //         margin-bottom: 1rem;
+    //       }
+    //     }
+    //   }
+    // }
+
+    .team__story {
+      background: #fff;
+
+      @include media('>=tablet') {
+        padding: 0 3rem;
       }
     }
 

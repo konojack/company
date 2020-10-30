@@ -1,11 +1,51 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function Team() {
+  useEffect(() => {
+    ScrollTrigger.batch('.t-main__two .mark__black', {
+      start: 'top +645px',
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          scrollTrigger: {
+            trigger: '.t-main__two .mark__black',
+          },
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onLeave: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onEnterBack: (batch) =>
+        gsap.to(batch, {
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onLeaveBack: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+    });
+  }, []);
+
   return (
     <div className='team__container' id='team'>
       <div className='team__wrapper'>
         <div className='team__box'>
-          <h2 className='main__two'>O nas</h2>
+          <h2 className='main__two t-main__two'><span className='mark__black'></span>O nas</h2>
         </div>
 
         {/* <div className='team__numbers'>
@@ -21,38 +61,71 @@ function Team() {
           </div>
         </div> */}
 
+        <div className='team__story'>
+          <p>Historia firmy SDT siega lat wczesnego dziecinstwa. </p>
+          <p>
+            Wlasciciele Marcin i Dawid znaja sie juz od ponad 20 lat a od 3 lat
+            dzialaja wspolnie przy realizacji roznych projektow z zakresu IT w
+            tym kryptowalut.
+          </p>
+          <p>
+            Caly zamysl wspolpracy jak i pomyslo stworzenia Wirtualnych
+            Wizytowek okazal sie strzalem w dziesiatke, gdyz w idealnym momencie
+            zaczal on zapelniac luke na rynku, ktora powstala po wieloletniej
+            zlej praktyce tworzenia strony internetowych.
+          </p>
+          <br />
+          <p>
+            Nasze siedziby znajduja sie w Poznaniu, Szczecinie, Glasgow
+            (Szkocja) i Antwerpii (Belgia).
+          </p>
+          <p></p>
+        </div>
+
         <div className='team__people'>
           <div className='team__person'>
-            <img src='./people.png' alt='Marcin photo' className='team__photo '/>
+            <img
+              src='./people.png'
+              alt='Marcin photo'
+              className='team__photo '
+            />
             <div className='team__info'>
               <h3>Marcin</h3>
               <p>
-                Tworca pomyslu, programista z wieloletnim doswiadczeniem i
-                absolwent filologii angielskiej.{' '}
+                Tworca pomyslu, programista z wieloletnim doswiadczeniem,
+                absolwent filologii angielskiej i zagorzaly praktykant sportow
+                walki.
               </p>
               <p>
                 Zajmuje sie UX/UI strony; w tym animacjami, dynamicznoscia i
-                plynnoscia strony.
+                plynnoscia ruchu strony.
               </p>
               <p>
                 Pomimo treningow Karate kazdego dnia, jest do Panstwa dyspozycji
-                24 godziny na dobe.
+                24 godziny na dobe, 7 dni w tygodniu.
               </p>
             </div>
           </div>
           <div className='team__person team__person-right'>
-            <img src='./people2.png' alt='Dawid photo' className='team__photo team__photo-right'/>
+            <img
+              src='./people2.png'
+              alt='Dawid photo'
+              className='team__photo team__photo-right'
+            />
             <div className='team__info team__info-right'>
               <h3>Dawid</h3>
               <p>
-                Prawa reka Marcina. Odpowiedzialny za strukture kodu, nowe
-                pomysly i poprawne SEO.
+                Prawa reka Marcina. Odpowiedzialny za strukture kodu, bazy
+                danych, poprawne SEO i narzedzia Google.
               </p>
               <p>
-                Na swoim koncie ma juz 6 lat doswiadczenia w programowaniu i 5
-                BitCoinow.{' '}
+                Na swoim koncie ma juz 6 lat doswiadczenia w pisaniu kodu. Zna
+                ponad 10 roznych jezykow programowania.
               </p>
-              <p>W wolnym czasie gra na perkusji i bije sasiadow.</p>
+              <p>
+                W wolnym czasie gra na perkusji i wzbogaca swoja wiedze na temat
+                kryptowalut.
+              </p>
             </div>
           </div>
         </div>

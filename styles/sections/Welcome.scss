@@ -2,13 +2,26 @@
   height: 36rem;
   position: relative;
 
+  .logo {
+    position: absolute;
+    left: 5vw;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    img {
+      width: 3.5rem;
+    }
+  }
+
   .welcome__wrapper {
     display: flex;
     padding: 5rem 0.5rem;
     position: relative;
 
     @include media('>=tablet') {
-      padding: 3rem 0rem;
+      padding: 4rem 0rem 3rem 0rem;
     }
 
     .welcome__box-left {
@@ -80,7 +93,7 @@
           .left__option {
             margin-right: 1rem;
           }
-          
+
           @include media('>=550px') {
             flex-direction: row;
             padding: 0.8rem 0;
@@ -94,6 +107,7 @@
         .e-book {
           display: inline-block;
           transform: translate(0rem, 1rem);
+          padding: 0;
         }
       }
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import {
   Trophy,
@@ -11,13 +11,55 @@ import {
   Deal,
 } from '../svg/Svg';
 import Typed from 'react-typed';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function Offer() {
+  useEffect(() => {
+    ScrollTrigger.batch('.o-main__two .mark__black', {
+      start: 'top +645px',
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          scrollTrigger: {
+            trigger: '.o-main__two .mark__black',
+          },
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onLeave: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onEnterBack: (batch) =>
+        gsap.to(batch, {
+          x: '-100%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+      onLeaveBack: (batch) =>
+        gsap.to(batch, {
+          x: '0%',
+          duration: 1,
+          overwrite: true,
+          // ease: 'Power2.easeOut',
+        }),
+    });
+  }, []);
+
   return (
     <div className='offer__container' id='offer'>
       <div className='offer__wrapper'>
         <div className='offer__box'>
-          <h2 className='main__two'>Interaktywne wizytowki</h2>
+          <h2 className='main__two o-main__two'>
+            <span className='mark__black'></span>Interaktywne wizytowki
+          </h2>
           <p>Idealne rozwiazanie dla firm 1-5 osobowych.</p>
         </div>
 
@@ -29,27 +71,27 @@ function Offer() {
               <h3>14 Sekcji</h3>
             </div>
             <div className='element__right'>
-              <h3 className='element__title'>Wyselekcjonowane Sekcje</h3>{' '}
+              <h3 className='element__title'>Lista Wybranch Sekcji</h3>{' '}
               <div className='sekcja__wrapper'>
                 <div>
-                  <p>1&#41; Sekcja Powitalna</p>
-                  <p>2&#41; Sekcja Logo</p>
-                  <p>3&#41; Sekcja Opis ogolny</p>
-                  <p>4&#41; Sekcja Statystyki</p>
-                  <p>5&#41; Sekcja Serwis</p>
-                  <p>6&#41; Sekcja O Nas</p>
-                  <p>7&#41; Sekcja Video</p>
-                  <p>8&#41; Sekcja Certyfikaty</p>
+                  <p>1 - Sekcja Powitalna</p>
+                  <p>2 - Sekcja Logo</p>
+                  <p>3 - Sekcja Opis ogolny</p>
+                  <p>4 - Sekcja Statystyki</p>
+                  <p>5 - Sekcja Serwis</p>
+                  <p>6 - Sekcja O Nas</p>
+                  <p>7 - Sekcja Video</p>
+                  <p>8 - Sekcja Certyfikaty</p>
                 </div>
                 <div>
-                  <p>9&#41; Sekcja Prezentacja</p>
-                  <p>10&#41; Sekcja Cennik</p>
-                  <p>11&#41; Sekcja Opinie Klientow</p>
-                  <p>12&#41; Sekcja Prezent</p>
-                  <p>13&#41; Sekcja Mapa + Kontakt</p>
-                  <p>14&#41; Sekcja Nawigacja + Footer</p>
+                  <p>9 - Sekcja Prezentacja</p>
+                  <p>10 - Sekcja Cennik</p>
+                  <p>11 - Sekcja Opinie Klientow</p>
+                  <p>12 - Sekcja Prezent</p>
+                  <p>13 - Sekcja Mapa + Kontakt</p>
+                  <p>14 - Sekcja Nawigacja + Footer</p>
                   <p>
-                    <span>+ niezliczona ilosc sekcji na Panstwa zyczenie</span>
+                    <span>+ dodatkowe sekcje na zyczenie</span>
                   </p>
                 </div>
               </div>
@@ -62,42 +104,52 @@ function Offer() {
           <div className='offer__element'>
             <div className='element__left'>
               <Steps />
-              <h3>60+ Krokow</h3>
+              <h3>61 Krokow</h3>
             </div>
             <div className='element__right'>
               <h3 className='element__title'>
-                60 krokow podjetych w celu stworzenia profesjonalnej strony
-                internetowej
+                61 krokow ktore tworza Wirtualna Wizytowke
               </h3>
 
-              <p>W tym:</p>
               <p>
-                <span># Strona pisana 100% od zera </span> bez uzycia szablonow
-                czy nieslawnych, wolnych i powtarzalnych CMS (np. WordPress)
+                <span># Strona pisana 100% od zera: </span>
+                <br /> Bez uzycia szablonow czy nieslawnych, wolnych i
+                powtarzalnych CMS (np. WordPress)
               </p>
+              <br />
               <p>
-                <span># SSR:</span> strona tworzy sie po stronie serwera a nie w
-                przegladrce. Oznacza to ze robotom Google latwiej bedzie ja
-                znalezc. Dzieki temu pozycja strony bedzie o wiele lepsza.{' '}
+                <span># SSR:</span> <br />
+                Strona tworzy sie po stronie serwera a nie w przegladrce.
+                Oznacza to ze robotom Google latwiej bedzie ja znalezc. Dzieki
+                temu pozycja strony bedzie o wiele lepsza a sama strona duzo
+                dynamiczniejsza.{' '}
               </p>
+              <br />
               <p>
-                <span># PWA:</span> progresywna aplikacja, dzieki ktorej strona
-                bedzie 2x szybciej dzieki zapisowi danych po pierwszych wizytach
-                a takze bedzie dzialac nawet gdy nie bedzie polaczenia z
-                internetem{' '}
+                <span># PWA:</span> <br />
+                Progresywna aplikacja, dzieki ktorej strona bedzie dzialac duzo
+                szybciej, pozwalajac na zapis danych po stronie klienta przy
+                pierwszych wizytach. PWA pozwala takze na to by Panstwa
+                Wirtualna Wizytowka dzialala nawet gdy nie bedzie polaczenia z
+                internetem
               </p>
+              <br />
               <p>
-                <span># Responsywnosc:</span> strona w 100% idealnie dopasowana
-                pod kazde urzadzenie i przegladarke internetowa co do pixela{' '}
+                <span># Responsywnosc:</span>
+                <br /> Strona w 100%, co do pixela (bedacego najmniejsza
+                jednostka wymiarowa), bedzie idealnie dopasowana pod kazde
+                urzadzenie i przegladarke internetowa
               </p>
+              <br />
               <p>
                 <span># Instalacja i optymalizacja:</span> <br />
                 Google Search console i Google Analytics - profesjonalne
                 narzedzia do kontroli statystyk, pomagajace dotrzec do wiekszej
-                ilosci klientow
+                ilosci klientow a takze zobrazowac co wplywa na wzrost a co na
+                spadek zainteresowania serwisem
               </p>
               <p className='buttonGo buttonBlue'>
-                <Link href='/steps'>Zobacz &rarr;</Link>
+                <Link href='/steps'>Zobacz wszystkie kroki &rarr;</Link>
               </p>
             </div>
           </div>
@@ -112,18 +164,32 @@ function Offer() {
                 <h3 className='element__title'>Google My Business Page</h3>
 
                 <p>
-                  Bardzo wazna czesc informacyjna o firmie, widoczna po prawej
-                  stronie ekranu, po wyszukaniu w Google.
+                  Bardzo wazna czesc informacyjna o firmie, widoczna z prawej
+                  stronie ekranu, po wyszukaniu w przegladarce Google.
                 </p>
                 <p>
-                  80% firm wykorzystuje ta czesc tylko w 20%. My uzyjemy jej w
-                  100%.
+                  80% firm wykorzystuje to narzedzie{' '}
+                  <span style={{ fontWeight: '700' }}>tylko w 20%!</span> <br />
                 </p>
+                <br />
+                <p
+                  style={{
+                    fontSize: '1.6rem',
+                    fontWeight: '700',
+                    color: '#fd2539',
+                  }}
+                >
+                  My uzyjemy go w 100%.
+                </p>
+                <br />
                 <p>Zadbamy o kazda mozliwa pozycje dla Google Moja Firma.</p>
                 <p>
-                  Damy Panstwu rady jak dbac o to by strona pozyskiwala
-                  pozytywne komentarze i byla wysoko oceniana.
+                  Dodatkowo damy Panstwu rady: <br />- jak dbac o to by strona
+                  pozyskiwala pozytywne komentarze, <br />
+                  - zlote gwiazdki <br />
+                  - byla wysoko oceniana <br />
                 </p>
+                <br />
                 <p>
                   &#40; Z prawej strony przyklad tego jak moze wygladac Google
                   Moja Firma &#41;
@@ -154,11 +220,16 @@ function Offer() {
                   typeSpeed={50}
                   loop
                 />
+                <br />
                 <p>Przygotowalismy dla Panstwa E-book. </p>
-                <p>Jest to pelen informacji zbior najlepszych zasad dotyczacych
-                tworzenia contentu</p>
-                <p>marketingowego, social media i sposobow na zdobycie wiekszej
-                ilosci klientow.</p>
+                <p>
+                  Jest to pelen informacji zbior najlepszych zasad dotyczacych
+                  tworzenia contentu
+                </p>
+                <p>
+                  marketingowego, social media i sposobow na zdobycie wiekszej
+                  ilosci klientow.
+                </p>
               </div>
               <p style={{ color: '#fd2e41' }}>E-book jest w 100% darmowy.</p>
               <p className='buttonGo buttonRed'>

@@ -1,5 +1,20 @@
 .ebookInfo__container {
   position: relative;
+  margin-bottom: 4rem;
+  .logo {
+    position: absolute;
+    left: 5vw;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 8;
+
+    img {
+      width: 3.5rem;
+    }
+  }
+
   .ebookInfo__wrapper {
     .ebookInfo__box {
       text-align: center;
@@ -38,6 +53,7 @@
         svg {
           height: 2rem;
           width: 10rem;
+          animation: gogo 1.5s infinite;
         }
       }
     }
@@ -64,17 +80,21 @@
         text-align: center;
 
         @include media('>=tablet') {
-            padding-top: 2rem;
-            padding-left: 4rem;
-          }
+          padding-top: 2rem;
+          padding-left: 4rem;
+        }
 
         h2 {
-            padding-bottom: 1rem;
-            color: $blueColorDark;
+          margin-bottom: 1rem;
+          color: $blueColorDark;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          overflow: hidden;
         }
 
         p {
-            color: $blueColor;
+          color: $blueColor;
         }
       }
     }

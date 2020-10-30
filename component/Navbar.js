@@ -1,19 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 // import LanguageSwitcher from './LanguageSwitcher'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+const timeline = gsap.timeline();
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-
+  useEffect(() => {
+    setTimeout(() => {
+      timeline
+        .to('.menu', {
+          y: 0,
+          opacity: 1,
+          delay: .5,
+        });
+    }, 1500);
+  }, []);
 
   return (
     <nav>
-      <div className='logo'>
-        <Link href='/'>
-          <img src='./favicon.ico' alt='logo' />
-          </Link>
-      </div>
       <div className={`menu ${open ? 'active' : ''}`}>
         <span className='toggle' onClick={() => setOpen(!open)}>
           <i></i>

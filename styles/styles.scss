@@ -55,8 +55,8 @@ body {
   height: 100%;
   width: 100%;
   color: #000;
-  font-family: "Montserrat",sans-serif;
-  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden !important;
   user-select: none;
   // max-width: 1400px;
   margin: 0 auto;
@@ -132,4 +132,8 @@ p {
   min-height: calc(100vh - 10rem);
   margin: 0 auto;
   padding: 0 1rem;
+
+  @include media('>=tablet') {
+    padding: 0 2rem;
+  }
 }
