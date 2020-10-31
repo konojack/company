@@ -14,7 +14,7 @@ function StructureInfo() {
       <div className='structureInfo__wrapper'>
         <div className='structureInfo__box'>
           <h1>
-            15 Sekcji <Elipze />
+            14 Sekcji <Elipze />
           </h1>
           <div className='arrov_dovn'>
             <ArrowDown />
