@@ -12,27 +12,27 @@ import '../styles/styles.scss';
 // Analytics
 import * as gtag from '../lib/gtag';
 // NProgress
-// import NProgress from 'nprogress';
-// import 'nprogress/nprogress.css';
-// import { Router } from 'next/dist/client/router';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
+import { Router } from 'next/dist/client/router';
 
-// NProgress.configure({
-//   showSpinner: false,
-//   trickleRate: 0.1,
-//   trickleSpeed: 300,
-// });
+NProgress.configure({
+  showSpinner: false,
+  trickleRate: 0.1,
+  trickleSpeed: 300,
+});
 
-// Router.events.on('routeChangeStart', () => {
-//   NProgress.start();
-// });
+Router.events.on('routeChangeStart', () => {
+  NProgress.start();
+});
 
-// Router.events.on('routeChangeComplete', () => {
-//   NProgress.done();
-// });
+Router.events.on('routeChangeComplete', () => {
+  NProgress.done();
+});
 
-// Router.events.on('routeChangeError', () => {
-//   NProgress.done();
-// });
+Router.events.on('routeChangeError', () => {
+  NProgress.done();
+});
 
 function MyApp({ Component, pageProps }) {
   // Google analytics start
