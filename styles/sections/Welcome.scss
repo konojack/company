@@ -153,46 +153,63 @@
     z-index: -10;
   }
 
-  svg:nth-child(1) {
-    height: 2rem;
-    fill: $blueColor;
-    top: 21%;
-    right: 22%;
-    z-index: -1;
-    animation: animationFramesTwo 19s infinite linear;
+  span {
+    position: absolute;
+    &::before {
+      content: '';
+      background-image: url('../../public/flagi.png');
+      width: 25px;
+      height: 25px;
+      display: block;
+    }
   }
 
-  svg:nth-child(2) {
-    height: 1rem;
-    fill: #ff292f;
+
+  span:nth-child(1) {
+    top: 21%;
+    left: 22%;
+    position: absolute;
+    animation: animationFramesTwo 19s infinite linear;
+    &::before {
+      background-position: -325px -300px;
+    }
+  }
+
+  span:nth-child(2) {
     top: 27%;
     left: 7%;
-    z-index: -1;
     animation: animationFramesFour 19s infinite linear;
+    &::before {
+      content: '';
+      background-position: -200px -100px;
+    }
   }
-
-  svg:nth-child(3) {
-    height: 3rem;
-    fill: #fde625;
+  span:nth-child(3) {
     right: -3%;
     top: 26%;
-    z-index: -1;
-    animation: jump 13s infinite linear;
+    animation: animationFramesFour 30s infinite linear;
+    &::before {
+      content: '';
+      background-position: -125px -200px;
+    }
   }
-
-  svg:nth-child(4) {
-    height: 3rem;
-    left: 50%;
-    top: 50%;
-    z-index: -1;
-    animation: animationFramesThree 30s infinite linear;
+  span:nth-child(4) {
+    left: 30%;
+    top: 80%;
+    animation: animationFramesTwo 30s infinite linear reverse ;
+    animation-delay: 1s;
+    &::before {
+      content: '';
+      background-position: -200px -150px;
+    }
   }
-
-  svg:nth-child(5) {
-    height: 3rem;
-    bottom: 32%;
-    left: 27%;
-    z-index: -1;
-    animation: animationFramesTwo 21s infinite linear;
+  span:nth-child(5) {
+    right: 32%;
+    top: -5%;
+    animation: animationFramesThree 21s infinite linear;
+    &::before {
+      content: '';
+      background-position: 0px -175px;
+    }
   }
 }

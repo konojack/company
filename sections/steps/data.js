@@ -179,13 +179,6 @@ export const media = [
     svg: '13-gallery',
   },
   {
-    title: '360 stopni',
-    bad: 'Brak zdjecia 360.',
-    good:
-      'Zdjecie 360 stopni lub panoramiczne VR np. miejsca pracy. Tego typu zdjecie jest jak wglad do srodka ksiazki. (opcja na zyczenie)',
-    svg: '7-360',
-  },
-  {
     title: 'Video',
     bad: 'Brak filmow.',
     good:

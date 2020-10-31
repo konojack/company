@@ -85,7 +85,7 @@ function GeneralInfo() {
           </p>
           <p>
             Struktura strony internetowej, ktora nazwalismy{' '}
-            <span style={{ fontWeight: '700', color: '#fd2539' }}>
+            <span className='bg-color-red'>
               Wirtualna Wizytowka
             </span>
             , zostala dostosowana do wymogow{' '}

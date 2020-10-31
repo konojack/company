@@ -257,12 +257,12 @@ function AllSteps() {
               {special.map((el, i) => {
                 return (
                   <div className='steps_box' key={i}>
-                    <span>{i + 28}#</span>
+                    <span>{i + 27}#</span>
                     <div className='box_title'>
                       <h3>{el.title}</h3>
                       <img
                         src={`./svg/${el.svg}.svg`}
-                        alt={`photo_${i + 28}`}
+                        alt={`photo_${i + 27}`}
                       />
                     </div>
                     <p>
@@ -290,12 +290,12 @@ function AllSteps() {
               {effects.map((el, i) => {
                 return (
                   <div className='steps_box' key={i}>
-                    <span>{i + 34}#</span>
+                    <span>{i + 33}#</span>
                     <div className='box_title'>
                       <h3>{el.title}</h3>
                       <img
                         src={`./svg/${el.svg}.svg`}
-                        alt={`photo_${i + 34}`}
+                        alt={`photo_${i + 33}`}
                       />
                     </div>
                     <p>
@@ -323,12 +323,12 @@ function AllSteps() {
               {recommendation.map((el, i) => {
                 return (
                   <div className='steps_box' key={i}>
-                    <span>{i + 59}#</span>
+                    <span>{i + 58}#</span>
                     <div className='box_title'>
                       <h3>{el.title}</h3>
                       <img
                         src={`./svg/${el.svg}.svg`}
-                        alt={`photo_${i + 59}`}
+                        alt={`photo_${i + 58}`}
                       />
                     </div>
                     <p>

@@ -30,8 +30,13 @@ function StructureInfo() {
             <p>
               W celu stworzenia profesjonalnej strony internetowej, ktora bedzie
               zarowno dynamiczna jak i nowoczesna, postanowilismy rozwinac
-              dotychczasowy sposob na tworzenie stron o wi
+              dotychczasowe sposoby i dodac nowe, obowiazkowe opcje.
             </p>
+            <p>Struktura ktora wybralismy zawiera wszystkie niezbedne informacje
+              dla poprawnej prezentacji.
+            </p>
+            <p>Calosc w polaczeniu z 60 krokami, stanowi idealne rozwiazanie
+              zyskujac coraz to wieksza popularnosc wsrod developerow.</p> 
           </div>
         </div>
       </div>

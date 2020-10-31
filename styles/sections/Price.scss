@@ -23,8 +23,8 @@
       margin: 2rem 0;
 
       .raty {
-        color: #fd2e41;
         margin-bottom: 0.5rem;
+        display: inline-block;
       }
       .procent {
         margin-top: 0.5rem;
@@ -41,7 +41,8 @@
       .no__pay {
         font-weight: 700;
         margin-top: 0.5rem;
-        color: #fd2e41;
+        display: inline-block;
+        margin-bottom: 1rem;
       }
       .last__msg {
         font-size: 22px;

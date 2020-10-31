@@ -39,8 +39,8 @@ function Intro() {
           document
             .querySelector('.layout__container')
             .removeChild(document.querySelector('.intro4'));
-            document.getElementsByTagName('html')[0].style.overflow = "auto";
-            document.body.style.overflowY = 'auto'
+            // document.getElementsByTagName('html')[0].style.overflow = "auto";
+            // document.body.style.overflowY = 'auto'
             setFirstEnter(false)
         },
       });

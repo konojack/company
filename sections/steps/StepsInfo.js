@@ -14,7 +14,7 @@ function StepsInfo() {
       <div className='stepsInfo__wrapper'>
         <div className='stepsInfo__box'>
           <h1>
-            61 Krokow <Elipze />
+            60 Krokow <Elipze />
           </h1>
           <div className='arrov_dovn'>
             <ArrowDown />

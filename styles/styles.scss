@@ -46,7 +46,7 @@ html {
   // @include fluid-type($min_width, $max_width, $min_font, $max_font);
   font-size: 18px;
   overflow-x: hidden;
-  overflow-y: hidden;
+  // overflow-y: hidden;
   scroll-behavior: smooth;
 }
 
@@ -61,7 +61,7 @@ body {
   user-select: none;
   // max-width: 1400px;
   margin: 0 auto;
-  overflow-y: hidden;
+  // overflow-y: hidden;
 }
 
 p {

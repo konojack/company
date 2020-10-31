@@ -103,6 +103,13 @@ $redColor: #fd2539;
   // transition: .2s;
 }
 
+.bg-color-red {
+  background-color: #fd2e41;
+  color: #fff;
+  padding: 0 .3rem;
+  font-weight: 700;
+}
+
 @keyframes animationFramesTwo {
   0% {
     transform: translate(0px, 0px) rotate(0deg) scale(1);

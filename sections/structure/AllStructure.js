@@ -83,7 +83,7 @@ function AllStructure() {
                 {el.img === 'MenuStructure' && <MenuStructure />}
               </div>
               <div className='allStructure__right'>
-                <h3>{el.h3}</h3>
+                <h3 className='bg-color-red'>{el.h3}</h3>
                 <p>{el.p}</p>
               </div>
             </div>

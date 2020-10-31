@@ -55,7 +55,7 @@ function Welcome() {
               <div className='right__option'>
                 <p>
                   <Checked />
-                  61 krokow
+                  60 krokow
                 </p>
                 <p>
                   <Checked />
@@ -81,11 +81,11 @@ function Welcome() {
       {/* <img src='./tlooo.png' className='welcome__tlo' /> */}
 
       <div className='welcome__elementy'>
-        <Circle />
-        <Domek />
-        {/* <Harmonia /> */}
-        <Krezka />
-        <Circle2 />
+        <span class="sport-icon flag-pl"></span>
+        <span class="sport-icon flag-pl"></span>
+        <span class="sport-icon flag-pl"></span>
+        <span class="sport-icon flag-pl"></span>
+        <span class="sport-icon flag-pl"></span>
       </div>
     </div>
   );

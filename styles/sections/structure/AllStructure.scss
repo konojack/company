@@ -66,8 +66,8 @@
           }
 
           h3 {
-            color: $blueColorDark;
             font-size: 20px;
+            align-self: flex-start;
 
             @include media('>=tablet') {
               font-size: 32px;

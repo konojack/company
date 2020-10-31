@@ -90,7 +90,7 @@ function Team() {
               className='team__photo '
             />
             <div className='team__info'>
-              <h3>Marcin</h3>
+              <h3 className='bg-color-red'>Marcin</h3>
               <p>
                 Tworca pomyslu, programista z wieloletnim doswiadczeniem,
                 absolwent filologii angielskiej i zagorzaly praktykant sportow
@@ -113,7 +113,7 @@ function Team() {
               className='team__photo team__photo-right'
             />
             <div className='team__info team__info-right'>
-              <h3>Dawid</h3>
+              <h3 className='bg-color-red'>Dawid</h3>
               <p>
                 Prawa reka Marcina. Odpowiedzialny za strukture kodu, bazy
                 danych, poprawne SEO i narzedzia Google.
@@ -129,6 +129,14 @@ function Team() {
             </div>
           </div>
         </div>
+      </div>
+      <div className='team__elementy'>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
       </div>
     </div>
   );

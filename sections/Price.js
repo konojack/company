@@ -52,7 +52,7 @@ function Price() {
           </h2>
         </div>
         <div className='promotion_info'>
-          <p className='raty'>Elastyczne raty</p>
+          <p className='raty bg-color-red'>Elastyczne raty</p>
           <div className='procent'>
             <p>
               {' '}
@@ -64,7 +64,7 @@ function Price() {
               />
             </p>
           </div>
-          <p className='no__pay'>Na poczatku nie placisz nic!</p>
+          <p className='no__pay bg-color-red'>Na poczatku nie placisz nic!</p>
           <p className='last__msg'>Pierwsza rata po 3 miesiacach od zakupu</p>
         </div>
         <div className='prices'>

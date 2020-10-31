@@ -91,7 +91,9 @@ function Offer() {
                   <p>13 - Sekcja Mapa + Kontakt</p>
                   <p>14 - Sekcja Nawigacja + Footer</p>
                   <p>
-                    <span>+ dodatkowe sekcje na zyczenie</span>
+                    <span className='bg-color-red'>
+                      + dodatkowe sekcje na zyczenie
+                    </span>
                   </p>
                 </div>
               </div>
@@ -104,21 +106,23 @@ function Offer() {
           <div className='offer__element'>
             <div className='element__left'>
               <Steps />
-              <h3>61 Krokow</h3>
+              <h3>60 Krokow</h3>
             </div>
             <div className='element__right'>
               <h3 className='element__title'>
-                61 krokow ktore tworza Wirtualna Wizytowke
+                60 krokow ktore tworza Wirtualna Wizytowke
               </h3>
 
               <p>
-                <span># Strona pisana 100% od zera: </span>
+                <span className='bg-color-red'>
+                  # Strona pisana 100% od zera:{' '}
+                </span>
                 <br /> Bez uzycia szablonow czy nieslawnych, wolnych i
                 powtarzalnych CMS (np. WordPress)
               </p>
               <br />
               <p>
-                <span># SSR:</span> <br />
+                <span className='bg-color-red'># SSR:</span> <br />
                 Strona tworzy sie po stronie serwera a nie w przegladrce.
                 Oznacza to ze robotom Google latwiej bedzie ja znalezc. Dzieki
                 temu pozycja strony bedzie o wiele lepsza a sama strona duzo
@@ -126,7 +130,7 @@ function Offer() {
               </p>
               <br />
               <p>
-                <span># PWA:</span> <br />
+                <span className='bg-color-red'># PWA:</span> <br />
                 Progresywna aplikacja, dzieki ktorej strona bedzie dzialac duzo
                 szybciej, pozwalajac na zapis danych po stronie klienta przy
                 pierwszych wizytach. PWA pozwala takze na to by Panstwa
@@ -135,14 +139,17 @@ function Offer() {
               </p>
               <br />
               <p>
-                <span># Responsywnosc:</span>
+                <span className='bg-color-red'># Responsywnosc:</span>
                 <br /> Strona w 100%, co do pixela (bedacego najmniejsza
                 jednostka wymiarowa), bedzie idealnie dopasowana pod kazde
                 urzadzenie i przegladarke internetowa
               </p>
               <br />
               <p>
-                <span># Instalacja i optymalizacja:</span> <br />
+                <span className='bg-color-red'>
+                  # Instalacja i optymalizacja:
+                </span>{' '}
+                <br />
                 Google Search console i Google Analytics - profesjonalne
                 narzedzia do kontroli statystyk, pomagajace dotrzec do wiekszej
                 ilosci klientow a takze zobrazowac co wplywa na wzrost a co na
@@ -169,19 +176,26 @@ function Offer() {
                 </p>
                 <p>
                   80% firm wykorzystuje to narzedzie{' '}
-                  <span style={{ fontWeight: '700' }}>tylko w 20%!</span> <br />
+                  <span style={{ fontWeight: '700', color: '#fd2e41' }}>
+                    tylko w 20%!
+                  </span>{' '}
+                  <br />
                 </p>
                 <br />
-                <p
-                  style={{
-                    fontSize: '1.6rem',
-                    fontWeight: '700',
-                    color: '#fd2539',
-                    textAlign: 'center'
-                  }}
-                >
-                  My uzyjemy go w 100%.
-                </p>
+                <div style={{ width: '100%', textAlign: 'center' }}>
+                  <p
+                    style={{
+                      fontSize: '1.6rem',
+                      textAlign: 'center',
+                      color: '#fff',
+                      padding: '.1rem .3rem',
+                      display: 'inline-block',
+                    }}
+                    className='bg-color-red'
+                  >
+                    My uzyjemy go w 100%.
+                  </p>
+                </div>
                 <br />
                 <p>Zadbamy o kazda mozliwa pozycje dla Google Moja Firma.</p>
                 <p>
@@ -232,7 +246,7 @@ function Offer() {
                   ilosci klientow.
                 </p>
               </div>
-              <p style={{ color: '#fd2e41' }}>E-book jest w 100% darmowy.</p>
+              <p style={{ fontWeight: '700' }}>E-book jest w 100% darmowy.</p>
               <p className='buttonGo buttonRed'>
                 <Link href='/ebook'>Zobacz &rarr;</Link>
               </p>
@@ -242,10 +256,13 @@ function Offer() {
       </div>
 
       <div className='offer__elementy'>
-        <MalyTriangle />
-        <Krezka />
-        <Circle2 />
-        <Circle />
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
+        <span class='sport-icon flag-pl'></span>
       </div>
     </div>
   );

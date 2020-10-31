@@ -109,11 +109,6 @@
 
           p {
             color: $blueColor;
-
-            span {
-              font-weight: 700;
-              color: #fd2e41;
-            }
           }
 
           h3 {
@@ -192,34 +187,81 @@
       z-index: -10;
     }
 
-    svg:nth-child(1) {
-      height: 2rem;
-      fill: $blueColor;
+    span {
+      position: absolute;
+      &::before {
+        content: '';
+        background-image: url('../../public/flagi.png');
+        width: 25px;
+        height: 25px;
+        display: block;
+      }
+    }
+
+    span:nth-child(1) {
       top: 21%;
-      right: 22%;
-      z-index: -1;
+      left: 22%;
+      position: absolute;
       animation: animationFramesTwo 19s infinite linear;
+      &::before {
+        background-position: -50px -250px;
+      }
     }
-    svg:nth-child(2) {
-      height: 1rem;
-      top: 27%;
+
+    span:nth-child(2) {
+      bottom: 27%;
       left: 7%;
-      z-index: -1;
       animation: animationFramesFour 19s infinite linear;
+      &::before {
+        content: '';
+        background-position: -200px -100px;
+      }
     }
-    svg:nth-child(3) {
-      height: 3rem;
-      right: 9%;
-      top: 41%;
-      z-index: -1;
-      animation: animationFramesThree 19s infinite linear;
+    span:nth-child(3) {
+      right: -3%;
+      top: 26%;
+      animation: animationFramesFour 30s infinite linear;
+      &::before {
+        content: '';
+        background-position: 0px -100px;
+      }
     }
-    svg:nth-child(4) {
-      height: 3rem;
-      top: 47%;
-      left: 13%;
-      z-index: -1;
+    span:nth-child(4) {
+      left: 30%;
+      top: 80%;
+      animation: animationFramesTwo 30s infinite linear reverse;
+      animation-delay: 1s;
+      &::before {
+        content: '';
+        background-position: -100px -325px;
+      }
+    }
+    span:nth-child(5) {
+      right: 32%;
+      top: -5%;
+      animation: animationFramesThree 21s infinite linear;
+      &::before {
+        content: '';
+        background-position: -275px -325px;
+      }
+    }
+    span:nth-child(6) {
+      right: 32%;
+      bottom: -5%;
+      animation: animationFramesFour 30s infinite linear;
+      &::before {
+        content: '';
+        background-position: -75px -25px;
+      }
+    }
+    span:nth-child(7) {
+      left: 42%;
+      bottom: -5%;
       animation: animationFramesTwo 21s infinite linear;
+      &::before {
+        content: '';
+        background-position: -375px -75px;
+      }
     }
   }
 }
